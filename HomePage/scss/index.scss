@@ -1,0 +1,9 @@
+@forward './pc';
+
+//1380px이하 // 2, 3, 4 section을 위한 것
+@forward './section_middle';
+
+//타블렛 1022px이하
+@forward './tablet';
+//모바일 896px이하
+@forward './mobile';

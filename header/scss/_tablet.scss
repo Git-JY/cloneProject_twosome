@@ -1,0 +1,160 @@
+@use './reset' as *; 
+
+@media(max-width: 1022px){
+
+// - - - - - - - - - - header↓ - - - - - - - - - - 
+header{
+
+    height: 88px; //태블릿: 88px //모바일: 높이가 56px
+    padding-top: 33px; //태블릿: 33px //모바일: 17px 
+
+    >.head_El{            
+        >h1.Logo{ 
+            >a{
+                //width: 152px; height: 21px; //모바일부터 다시 활성화
+            }
+        }//h1.Logo
+        
+        >div.head_right{
+            >.Language{
+                width: 84px; height: 30px; //태블릿: 84x30 //모바일: 71x24
+                margin-right: 60px; //태블릿: 60px //모바일: 20px
+
+                //font-size: 13.3px; //모바일: 12.5px
+            }
+            >.verMenu_btn{
+                width: 22px; height: 22px; //태블릿: 22x22
+            }
+        }//div.head_right
+
+    }//.head_El //헤더요소들
+
+    &:hover{
+        height: 88px;
+    }
+
+}//header //헤더배경
+// - - - - - - - - - - header↑ - - - - - - - - - -
+
+//- - - - - - - - - - Navigation↓ - - - - - - - - - -
+nav.navigate{
+    padding: 0 48px; //태블릿: 48px //모바일: 32px
+    align-items: flex-start;
+
+    &.active{
+    }
+
+    // ↓ 모바일은 알아서 맞춰보삼
+    >div.head_gnb_vertical_top_Wrap{
+
+        >h1.Logo{
+        }
+        >div.xBtn{
+        }
+    }//div.head_gnb_vertical_top_Wrap //로고와 x버튼
+
+    >ul.head_gnb_vertical{
+        font-size: 32px;
+        line-height: 100%; //태블릿
+
+        //- - - - - - - - - -(gnb1_투썸플레이스 소개)- - - - - - - - - -
+        >li{
+            margin-top: 32px; //태블릿: 32px //모바일: 24px
+            >a{
+                line-height: 48px; //태블릿: 48px //모바일: 36px
+
+                &::before{
+                }
+                &:hover{
+                    &:before{
+                    }
+                }
+            }//>a
+
+            >ul.head_lnb{
+                top: 32px; //태블릿: 32px // 모바일: 0px
+                left: calc(350px + 60px); //태블릿: calc(350px + 60px) // 모바일: 0px
+
+                >li{// 투썸플레이스 ~ 브랜드 브로슈어(총 9개의 li의 lnb [6,2,1 개로 나뉨])
+                    &:not(:first-child){margin-top: 24px;} //태블릿: 24px //모바일: 16px
+                    >a{
+                        font-size: 24px;
+                        line-height: 100%; //태블릿: 100%
+                    }
+                    &.mini{
+                        margin-top: 14px; //태블릿: 14px //모바일: 16px
+                        >a{
+                            font-size: 20px;
+                            line-height: 100%; //태블릿: 100%
+                        }
+                    }//&.mini
+
+                }
+            }//ul.head_lnb //(gnb1_투썸플레이스 소개의 lnb)
+
+            //태블릿, 모바일 알아서 바꿔보삼
+            &.active{
+                >a{
+                    &:before{
+                        margin-right: 15px;
+                    }
+                }
+                >ul{
+                }
+            }//active가 붙은 li태그
+        
+        }//li //(gnb1_투썸플레이스 소개(gnb의 a태그 + ul.head_lnb))
+
+    }//ul.head_gnb_vertical //세로 메뉴내용
+
+    >div.head_gnb_vertical_bottom{
+        bottom: 40px; right: 40px; //태블릿: 40x40(어림잡음)  //모바일: bottom: 0px; right: auto;
+
+        //모바일: border-top: 1px solid #999;
+
+        >ul.sideMenu{
+            >li{
+                &:not(:last-child){margin-bottom: 16px;} //태블릿: 16px //모바일: 14px
+                >a{
+                    @include font(16px, 500, #999); //태블릿: 16px //모바일: 14px
+                }
+            }
+            margin-bottom: 25px; //태블릿: 25px(어림잡음) //모바일: 32px
+        }//ul.sideMenu
+
+        >ul.snsIcons{
+            >li{
+                >a{
+                    >img{
+
+                    }
+                }
+            }
+        }//ul.snsIcons
+
+    }//div.head_gnb_vertical_bottom //사이드메뉴 + SNS아이콘들
+
+}//nav.navigate //세로 메뉴배경
+//- - - - - - - - - - Navigation↑ - - - - - - - - - -
+
+}//@media(max-width: 1022px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

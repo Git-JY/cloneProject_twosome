@@ -1,0 +1,986 @@
+@use './reset' as *; 
+
+@media(max-width: 896px){
+
+body{
+    // overflow: visible;
+        width: auto; height: auto;
+}
+
+// - - - - - - - - - - header↓ - - - - - - - - - - 
+header{
+    background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px);
+    height: 10vw; //태블릿: 88px 
+    padding: 3.8vw 4vw 0;
+
+    color: white !important;
+    >.head_El>h1.Logo>a{
+        background: url('../../header/img/logo_white.svg') center center / 100% 100% no-repeat scroll !important;
+    }
+    >.head_El>div.head_right>.Language{
+        border:1px solid white !important;
+    }
+    >.head_El>div.head_right>.verMenu_btn{
+        background: url('../../header/img/icon_headerLogo_white.svg') center center / 100% 100% no-repeat scroll !important;
+    }
+
+    >.head_El{            
+        >h1.Logo{ 
+            width: 22vw; height: 3vw;
+            // transform: translateY(-10%);
+
+            >a{
+            }
+        }//h1.Logo
+        
+        >div.head_right{
+            >.Language{
+                width: 10vw; height: 3.5vw; //태블릿: 84x30 
+                margin-right: 2.5vw; //태블릿: 60px 
+
+                font-size: 1.8vw; 
+            }
+            >.verMenu_btn{
+                width: 3.2vw; height: 3.2vw;
+            }
+        }//div.head_right
+
+    }//.head_El //헤더요소들
+
+    &.firstFloor{
+        color: white;
+        >.head_El>h1.Logo>a{
+            background: url('../../header/img/logo_white.svg') center center / 100% 100% no-repeat scroll;
+        }
+        >.head_El>div.head_right>.Language{
+            border:1px solid white;
+        }
+        >.head_El>div.head_right>.verMenu_btn{
+            background: url('../../header/img/icon_headerLogo_white.svg') center center / 100% 100% no-repeat scroll;
+        }
+    }//header.firstFloor
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 10vw;
+    }//&:hover
+
+    // &:hover{
+    //     background-color: rgba(0, 0, 0, 0.8); 
+    //     color: white;
+    //     height: 56px;
+    //     box-shadow: none;
+
+    //     >.head_El{
+    //         >h1.Logo>a{
+    //             background: url('../../header/img/logo_white.svg') center center / 100% 100% no-repeat scroll;
+    //         }
+    //         >div.head_right{
+    //             >.Language{
+    //                 border:1px solid white;
+    //             }
+    //             >.verMenu_btn{
+    //                 background: url('../../header/img/icon_headerLogo_white.svg') center center / 100% 100% no-repeat scroll;
+    //             }
+    //         }
+    //     }//&:hover>.head_El
+    
+    // }//&:hover
+
+}//header //헤더배경
+// - - - - - - - - - - header↑ - - - - - - - - - -
+
+
+//- - - - - - - - - - Navigation↓ - - - - - - - - - -
+nav{
+    padding: 0 3.5vw; //태블릿: 48px //모바일: 32px
+    //padding-right: calc(100vw - 100% + 32px); //스크롤바까지 계산
+
+    &.active{
+    }
+
+    // ↓ 모바일은 알아서 맞춰보삼
+    >div.head_gnb_vertical_top_Wrap{
+
+        height: 6vw;
+        
+        >h1.Logo{
+            top: 2.5vw; 
+            width: 18vw; height: 3vw;
+        }
+        >div.xBtn{
+            top: 2.5vw; 
+            width: 3.5vw; height: 3.5vw;
+        }
+    }//div.head_gnb_vertical_top_Wrap //로고와 x버튼
+
+    >ul.head_gnb_vertical{
+        font-size: 2.8vw;
+        margin-top: 3.6vw;
+
+        //- - - - - - - - - -(gnb1_투썸플레이스 소개)- - - - - - - - - -
+        >li{
+            &:not(:first-child){
+                margin-top: 3.8vw; //태블릿: 32px //모바일: 24px
+            }
+            &:first-child{
+                margin-top: 0px;
+            }
+
+            >a{
+                line-height: 100%; //태블릿: 48px //모바일: 36px
+
+                &::before{
+                    width: 1vw; height: 1vw;
+                }
+                &:hover{
+                    &:before{
+                        margin-right: 1.5vw;
+                    }
+                } 
+            }//>a
+
+            >ul.head_lnb{
+                position: relative; //모바일: relative
+                top: 0px; //태블릿: 32px // 모바일: 24px
+                left: 4vw; //태블릿: calc(350px + 60px) // 모바일: 0px
+                margin: 2.5vw 0px 4vw;
+
+                >li{// 투썸플레이스 ~ 브랜드 브로슈어(총 9개의 li의 lnb [6,2,1 개로 나뉨])
+                    &:not(:first-child){margin-top: 1.5vw;} //태블릿: 24px //모바일: 16px
+                    >a{
+                        font-size: 1.9vw;
+                    }
+                    &.mini{
+                        //margin-top: 16px; //태블릿: 14px //모바일: 16px
+                        >a{
+                            font-size: 1.6vw;
+                        }
+                    }//&.mini
+
+                }//>li
+            }//ul.head_lnb //(gnb1_투썸플레이스 소개의 lnb)
+
+            //태블릿, 모바일 알아서 바꿔보삼
+            &.active{
+                >a{
+                    &:before{
+                        margin-right: 1.2vw;
+                    }
+                    
+                }
+                >ul{
+                }
+            }//active가 붙은 li태그
+        
+        }//li //(gnb1_투썸플레이스 소개(gnb의 a태그 + ul.head_lnb))
+
+    }//ul.head_gnb_vertical //세로 메뉴내용
+
+    >div.head_gnb_vertical_bottom{
+        position: relative; //모바일: relative
+        bottom: 0px; right: 0px; //태블릿: 40x40(어림잡음)  //모바일: bottom: 0px; right: auto;
+        width: 100%;
+
+        border-top: 1px solid rgba(255,255,255,0.16); //모바일
+        margin-top: 6.5vw; //모바일
+
+        >ul.sideMenu{
+            margin: 3.5vw 0; //태블릿: 25px(어림잡음) //모바일: 32px
+            >li{
+                text-align: left; //모바일: left
+                &:not(:last-child){margin-bottom: 1.6vw;} //태블릿: 16px //모바일: 14px
+                >a{
+                    @include font(1.6vw, 500, #999); //태블릿: 16px //모바일: 14px
+                }
+            }
+
+        }//ul.sideMenu
+
+        >ul.snsIcons{
+            padding-left: 0; // 모바일: 0px 
+            @include flex(flex-start);
+            >li{
+                margin-right: 1.7vw;
+                width: 4vw; height: 4vw;
+
+                >a{
+                    width: 100%; height: 100%;
+                    >img{
+                        width: 100%; height: 100%;
+                    }
+                }
+            }
+        }//ul.snsIcons
+
+    }//div.head_gnb_vertical_bottom //사이드메뉴 + SNS아이콘들
+
+    >span.info{
+        bottom: 2.5vw; left: 1.2vw;
+        font-size: 2vw;
+    }
+
+}//nav //세로 메뉴배경
+//- - - - - - - - - - Navigation↑ - - - - - - - - - -
+
+
+div#allFloorWrapper{
+
+    //모든 페이지
+    >section{ 
+        >div.fp-overflow{
+            &:not(:first-child){padding-top: 15vw;}       
+            h1{
+                font-size: 4.5vw !important;
+                
+                &::after{//제목 옆의 빨간네모
+                    width: 1.3vw !important; height: 1.3vw !important; 
+                    margin-left: 1vw; 
+                }
+            }
+
+        }//>div.fp-overflow
+    }//section //모든 페이지
+
+    >section.main{//1page
+        >div.fp-overflow{
+            height: 85vh;
+            >ul.main_slide{//슬라이드(사진묶음)
+                >li{
+                    >picture{ //메인_1 커피배경, 메인_2 여러 케잌배경
+                        >source{
+                        }
+                        >img{
+                        }
+                    }
+                }//li
+            }//ul.main_slide //슬라이드
+    
+            >div.pagination_wrap{//페이지네이션
+                display: none;
+                bottom: 3.5vw; //모바일: bottom: 24px;
+                width: 20vw; height: 6.8vw;
+        
+                //좌측 화살표
+                >div.leftBtn{
+                    width: 3vw; height: 3vw;
+                }
+                // 전체페이지수/현제페이지수
+                >span.pagination_pageNumber{
+                    font-size: 2.1vw; 
+                    >span:nth-of-type(1){
+                        
+                    }
+                    >span:nth-of-type(2){
+    
+                    }
+                    >span:nth-of-type(3){
+    
+                    }
+                }
+                //우측 화살표
+                >div.rightBtn{
+                    width: 3vw; height: 3vw;
+    
+                }
+            }//div.pagination_wrap //페이지네이션- - - - - - - - - - - -
+        }//>div.fp-overflow
+    }//section.main //1페이지
+
+//////////////////////////////////////////////////////////////////////
+
+    >section.menuStory{//2page
+        >div.fp-overflow{
+            height: 135vw;
+            // height: auto;
+            // padding: 80px 32px 80px 32px;
+            padding: 0px;
+            // justify-content: center; align-items: center;
+            
+            >div.menuStory_Wrapper{
+                width: 80vw;
+                min-width: auto; //min-width 초기화 
+                height: auto;  //height 초기화
+    
+                justify-content: flex-start; align-items: flex-start; flex-direction: column;
+    
+                //❤
+                //position: static; //position 초기화
+    
+                >h1{//MENU STORY
+                    position: static; //position 초기화
+                    // margin-bottom: 1.5vw;
+                }//h1
+                
+                >ul.text_btn{
+                    width: 100%; height: 7vw;//태블릿: 320x235 //모바일: 100%x60
+                    
+                    @include flex(flex-start, center){flex-direction: row;};// column에서 row로 바꿈
+    
+                    >li{
+                        flex-grow: 0;
+                        padding-right: 3vw;
+                        
+                        >span{
+                            //@include font(14px, 700);//태블릿: 14px //모바일: 12px
+                            //margin-bottom: 8px;//태블릿: 8px //모바일: 8px     
+                        }
+                        >b{
+                            font-size: 1.9vw;   
+                        }
+                    }//>li
+    
+                    //클릭이벤트 임시
+                    >li.active{
+                        >span{
+                            display: none;
+                        }
+                        >b{
+                        }
+                    }//>li.active
+    
+                }//ul.text_btn //COFFEE STORY~DELI STORY(버튼+설명 총 3개 묶음)
+        
+                >div.slides_wrapper{ //슬라이드 + 페이지네이션
+                    width: 100%; 
+                    max-width: 100%;
+    
+                    >ul.topEx_mobile{
+                        @include flex();
+    
+                        width: 100%; height: 8vw;;
+                        // padding: 1.8vw 2vw;
+                        
+                        background-color: #f5f5f5;
+    
+                        >li{
+                            display: none;
+                            justify-content: center; align-items: center;
+                            flex-direction: column;
+    
+                            &.active{
+                                display: flex;
+                            }
+    
+                            >span{
+                                &:nth-of-type(1){
+                                    @include font(1.4vw, inherit,#707070);
+                                    margin-bottom: 1vw;
+                                }
+                                &:nth-of-type(2){
+                                    @include font(2vw, 900,#333);
+                                }
+                            }//span
+                        }//li
+                    }//>ul.topEx_mobile
+    
+                    >div.img_slides{ //슬라이드
+                        width: 100%; 
+    
+                        >ul{ //총 3개의 모든 슬라이드
+                            width: 100%;
+                            display: none;
+                            &.active{//첫번째 슬라이드
+                                width: 100%;
+    
+                                //❤
+                                //justify-content: center; //사진을 처음 있는 곳에 놓음
+                            }//&.active
+                            
+                            >li{//각각의 사진
+                                padding-right: 0px; //초기화
+    
+                                flex-shrink: 0; 
+                                height: 100%; //태블릿: 128x128 //모바일: overflow: hidden에 가려짐
+                                //임시 //자바스크립트로 후에 다시 제어
+                                
+                                //transform: translateX(-100%); 사진변경
+                                &.active{//첫번째 사진
+                                    width: 100%; height: 100%; //태블릿: 368x368 //모바일: width: 100%
+                                }//&.active
+                                >a{
+                                    vertical-align: middle; //이미지에만 vertical-align: middle줘서 넣어줌
+                                    >img{
+                                        width: 100%; height: 100%; 
+                                        object-fit: cover;
+                                    }//>img
+    
+                                }//>a
+                            }//>li
+                        }//>div.img_slides>ul //총 3개의 모든 슬라이드
+    
+                    }//div.img_slides //슬라이드 //총 3개의 슬라이드 묶음 COFFEE STORY~DELI STORY
+        
+                    >div.img_slide_pagination{//페이지네이션
+                        position: static;
+                        transform: translate(0px, 0%);
+                        width: 100%;  
+                        font-size: 2.5vw;
+                        height: 7vw;
+    
+                        //좌측 화살표
+                        >div.leftBtn{
+                            width: 3vw; height: 3vw;
+                        }
+                        //음식이름
+                        >span{
+                        }
+                        //우측 화살표
+                        >div.rightBtn{
+                            width: 3vw; height: 3vw;
+                        }
+                    }//div.img_slide_pagination //페이지네이션
+        
+        
+                }//div.slides_wrapper //슬라이드 + 페이지네이션
+            }//div.menuStory_Wrapper
+        }//>div.fp-overflow
+    
+    }//section.menuStory //2페이지
+
+//////////////////////////////////////////////////////////////////////
+
+    >section.aList{//3page
+        >div.fp-overflow{
+            height: 120vw;
+            background: url('../img/img_3_3.jpg') center bottom / cover no-repeat scroll;
+            padding: 0px; 
+            align-items: flex-start;
+    
+            >div.text_wrap{
+                width: 80vw;
+                min-width: auto;
+    
+                >h1{//에이리스트
+                    margin-bottom: 3vw; //태블릿: 72px //모바일: 32px
+                }
+    
+                >strong{
+                    font-size: 2.7vw;
+                    margin-bottom: 2.2vw;
+                }
+                >span{
+                    font-size: 2vw;
+                    margin-bottom: 1.6vw;
+                }
+                >p{
+                    white-space: normal;
+                    font-size: 2vw;
+    
+                    >br.mb_br{
+                        display: inline-block;
+                    }
+                }
+            }//div.text_wrap //텍스트 전체 묶음
+        }//>div.fp-overflow
+
+    }//section.aList //3페이지
+
+//////////////////////////////////////////////////////////////////////
+
+    >section.brandSupport{//4page
+        >div.fp-overflow{
+            justify-content: flex-start;
+            height: 135vw;
+    
+            >div.brandSupport_exWrapper{
+                // outline: 1px solid red;
+            
+                align-items: center; flex-direction: column;
+                height: auto; max-height: none;
+                width: 80vw;
+    
+                >h1{
+                    top: -25px; 
+                    
+                    &::after{//제목 옆의 빨간네모
+                    }
+                    
+                }//h1
+                
+                overflow: visible;
+    
+                >div.slides_wrapper{//슬라이드 + 페이지네이션
+                    // outline: 2px solid blue;
+    
+                    //overflow: hidden;
+                    //outline: 5px solid greenyellow;
+                    width: 100%; //1312px이하: 765px //모바일: 100% 100%
+                    height: auto;
+                    
+                // flex-end를 flex-start로 바꿔서 필요없을 듯
+                //transform: translateX(-200px);  //1312px이하: 알아서 맞추삼 //모바일: 0px             
+                    >div.slideFlame{
+                        // outline: 3px solid green;
+                        width: 100%; height: auto;
+                        >ul.img_slide{//슬라이드
+                            overflow: hidden;
+                            >li{      
+                                width: 100%;  
+                                height: auto;                  
+                                //transform: translateX(-100%);               
+                                //outline: 1px solid black;
+                                justify-content: space-between; align-items: flex-start;
+                                flex-direction: column;
+                                //display: none;
+                                    
+                                >div.spanAndImg{
+                                    @include flex(center, flex-end); 
+                                    width: 100%;
+                                    //outline: 5px solid blue;
+                                    //모바일: span: display: none
+    
+                                    >span{        
+                                        display: none; 
+    
+                                        &::before{                                   
+                                        }
+                                        //outline: 1px solid black;         
+                                    }
+                                    >p{
+                                        margin-left: 0px;
+                                        width: 100%; height: auto;  //1312px이하: 350x350 //모바일: min-width: 419px min-height: 419px
+                                        //outline: 1px solid black;                          
+                                        >img{
+                                        }
+                                    
+                                    }//p
+    
+                                }//div.spanAndImg
+                
+                                >div.ex{
+                                    // outline: 1px solid black;
+    
+                                    margin-top: 5vw;
+                                    width: 100%; height: 20vw; //1312px이하: 240x250 //모바일: 104px
+                                    margin-left: 0px;  //1312px이하: 48px //모바일: 0px,
+                                    transform: translateY(0);
+    
+                                    >p{//아이콘 이미지
+                                        display: inline-block;
+                                        width: 6vw; height: 6vw; //1312px이하: 48x48 //모바일: 36x36
+                                        margin-right: 0px 2.5vw 0px 0px;
+                                        vertical-align: middle;
+                                        >img{
+                                        }
+                                        
+                                    }
+                                    >a{//글씨
+                                        >strong{
+                                            font-size: 4vw;
+                                            //margin-bottom: 0px; //1312px이하: 알아서 어림잡아보삼
+                                            vertical-align: middle;
+                                        }//>strong
+                                        &::after{//화살표
+                                            transform: translateY(2px);
+                                        }//&::after
+                                    }//>a
+    
+                                    >div{
+                                        margin-top: 1vw; 
+                                        font-size: 2.5vw; font-weight: 300; //1312px: 14px
+                                        white-space: normal; //모바일: normal
+                                        //모바일: margin-top: 16px
+                                        @include text();
+                                    }//>div
+                                }//div.ex //글씨설명 묶음
+                            }//li //슬라이드의 각 요소   
+                
+                        }//ul.img_slide //슬라이드
+                    }//>div.slideFlame
+    
+                    >div.pagination_wrap{//페이지네이션 
+                        // display: none;
+                        left: 0px; transform: translateY(-30vw); z-index:99;
+                        width: 100%; height: 8vw; //1312px이하: 240x48 //모바일: 100%x48
+                        font-size: 2.2vw;
+    
+                        >div.leftBtn{
+                            width: 4vw; height:4vw;
+                        }//>div.leftBtn
+    
+                        // 전체페이지수/현제페이지수
+                        >span.pagination_pageNumber{
+                            width: auto;
+                            >span:nth-of-type(1){
+            
+                            }
+                            >span:nth-of-type(2){
+            
+                            }
+                            >span:nth-of-type(3){
+            
+                            }
+                        }//>span.pagination_pageNumber
+    
+                        >div.rightBtn{
+                            width: 4vw; height:4vw;
+                        }//>div.rightBtn
+                        
+                    }//div.pagination_wrap //페이지네이션
+    
+                }//div.slides_wrapper //슬라이드 + 페이지네이션
+            }//>div.brandSupport_exWrapper
+        }//>div.fp-overflow
+
+    }//section.brandSupport //4페이지
+
+//////////////////////////////////////////////////////////////////////
+    
+    >section.franchise{//5page
+        >div.fp-overflow{
+            height: 80vh;
+    
+            >div.background{
+                >ul.dots{
+                    >li{
+                        // width: 1vw; height: 1vw
+                        width: 1vh; height: 1vh;
+                    }
+                }//>ul.dots
+    
+                >ul.imgs{
+                    >li{
+                        >dl{
+                            >dd{
+                                // width: 19vw; height: 19vw;
+                                width: 13vh; height: 13vh;
+                            }
+                            >dt{
+                                // height: 3.7vw;
+                                // border-radius: 4vw;
+                                // padding: 0 1.9vw;
+                                // font-size: 1.4vw;
+                                height: 2.5vh;
+                                font-size: 1.2vh;
+                                padding: 0 1.2vh;
+                            }
+                        }//>dl
+                    }//>li
+                }//>ul.imgs
+            }//>div.background
+    
+            >div.ex_wrap{
+                // outline: 1px solid red;
+                padding: 0px;
+                width: 80vw; //모바일 100%
+    
+                >h1{
+                    margin-bottom: 2.5vw; 
+                }
+                >strong{
+                    font-size: 2.2vw; //태블릿: 20px 
+                    margin-bottom: 2vw; //태블릿: 20px 
+                }
+                >p{
+                    font-size: 2vw;
+                    margin-bottom: 5.5vw; //태블릿: 40px 
+                }
+                >div.btn{
+                    justify-content: space-between;
+                    width: 100%;//모바일: width: 100%; space-between
+    
+                    >div{
+                        min-width: auto;
+                        height: 7.7vw; //태블릿: 100%x56px
+    
+                        &:nth-of-type(1){
+                            margin-right: 4vw;
+                        }
+    
+                        >a{
+                            justify-content: center; //모바일: center
+                            padding: 0 0px; 
+                            font-size: 2.2vw;
+    
+                            &::after{//화살표
+                                display: none; //모바일
+                            }   
+    
+                            &::before{//검은배경
+                            }
+    
+                            // a hover시
+                            &:hover{
+                                &::before{
+                                }
+                            }//hover
+    
+                        }//a                    
+    
+                    }//div //각 버튼들
+                }//div.btn            
+            }//>div.ex_wrap           
+        }//>div.fp-overflow
+        
+    }//section.franchise //5페이지
+    
+//////////////////////////////////////////////////////////////////////
+    
+    >section.newAndNotice{//6page
+        >div.fp-overflow{
+            // outline: 1px solid red;
+    
+            height: 85vw;
+            padding: 0px; //모바일: 80px 32px
+    
+            div.container{
+                //outline: 3px solid black;
+                
+                width: 80vw; height: auto; 
+                @include flex(center, flex-start){flex-direction: column;}; //모바일: flex-direction: column;
+    
+                >div.left{
+    
+                    //border: 1px solid black;
+                    >h1{
+                        
+                    }
+                    >span{
+                        margin: 4vw 0px 3vw; //태블릿: 30px 63px //모바일: 30px 0px 26px
+                        font-size: 1.8vw; //태블릿: 18px; 
+        
+                    }
+    
+                    >p{
+                        display: none; //모바일
+                        >img{
+                        }
+                    }//>p
+                }//div.left
+            
+                >div.right{
+                    &.tbPc{display: none;}
+                    &.Mb{display: block;}
+                    max-width: none; // 태블릿 //모바일: none
+                    height: 21vw; //태블릿: 100%x428
+                    border: 2px solid #000; //모바일
+                    overflow: hidden; //모바일
+                    
+                    >ul{
+                        @include flex(flex-start); //모바일
+    
+                        >li{
+                            //transform: translateX(-100%);
+    
+                            flex-shrink: 0; //모바일
+                            width: 100%; //모바일
+                            height: 100%; //모바일: 100% 
+                            border-bottom: none; //모바일: none
+                            
+                            &::before{//검은배경 
+                                display: none; //모바일
+                            }//&::before
+    
+                            >a{
+                                padding: 4vw 3vw; //태블릿: 30px 32px
+                                //모바일: 28px 24px
+                                height: 17vw; //모바일: 149px
+    
+                                >em{
+                                    font-size: 1.5vw;
+                                    //태블릿: 14px
+                                }
+    
+                                >strong{
+                                    font-size: 2.1vw;
+                                    //태블릿: 16px
+                                }
+    
+                                >span{
+                                    font-size: 1.5vw;
+                                    //태블릿: 14px
+                                }
+                            }//a
+    
+                            &:hover{                       
+                                &::before{
+                                }
+                                >a{
+                                    >strong{   
+                                        color: black;                
+                                    }
+                                    >span{
+                                        color: black;               
+                                    }
+                                }//>a
+                            }//&:hover
+                        }//li
+                    }//>ul
+                }//>div.right
+    
+    
+                >div.pagination_wrap{//페이지네이션 
+                    display: flex;
+    
+                    >div.leftBtn{
+    
+                    }
+                    // 전체페이지수/현제페이지수
+                    >span.pagination_pageNumber{
+                        >span:nth-of-type(1){
+    
+                        }
+                        >span:nth-of-type(2){
+    
+                        }
+                        >span:nth-of-type(3){
+    
+                        }
+                    }//>span.pagination_pageNumber
+    
+                    >div.rightBtn{
+    
+                    }//>div.rightBtn
+                    
+                }//div.pagination_wrap //페이지네이션
+            }//div.container
+        }//>div.fp-overflow
+
+    }//section.newAndNotice //6페이지
+
+//- - - - - - - - - - footer↓ - - - - - - - - - -
+    footer{
+        >div.fp-overflow{
+            // height: 56vw;
+            height: auto;
+            padding: 4vw 0; 
+        
+            >div.footerWrapper{
+                // height: 48vw; 
+                height: auto; 
+        
+                >div.footer_top{
+                    // height: 32%; //모바일 height: 약 28%
+                    height: auto; 
+                    align-items: flex-start;
+                    
+                    >div.topLeft{
+                        width: 100%; height: auto; //태블릿: 175x114 //모바일 100%x105
+                        >a{
+                            font-size: 2vw;//태블릿: 20px //모바일 18px
+                            margin-bottom: 3vw ;
+                        }
+                    }//div.topLeft //상단좌측
+                    
+                    >div.topRight{
+                        display: none;
+        
+                        >div.Address, >div.CustomerCenter{
+        
+                        }//div.Address
+                        
+                        >div.CustomerCenter{
+                            >b{
+                                
+                            }
+                            >ul{
+                                >li{
+                                    
+                                }
+                            }
+                        }//div.CustomerCenter
+                        
+                    }//div.topRight //상단우측
+            
+                }//div.footer_top //상단 묶음
+                
+                >div.footer_bottom{
+                    //height: 68%; //모바일 height: 약 72%
+                    padding-top: 3.4vw;
+        
+                    >ul.footer_bottom_menu_Btn{
+                        margin-bottom: 2.3vw; //태블릿: //모바일: 보고 어림잡아보삼
+                        >li{
+                            margin-right: 1.6vw; //모바일: 14px
+                            >a{
+                                font-size: 1.4vw;
+                            }
+                            >a.YellowFont{
+                            }
+                        }//>li
+                    }//ul.footer_bottom_menu_Btn 
+                    
+                    >ul.grayInfo{
+                        justify-content: center; align-items: flex-start; flex-direction: column; //모바일: flex-direction: column;
+                        >li{
+                            font-size: 1.4vw;
+                            margin-bottom: 1.2vw;
+        
+                            &:nth-of-type(n+2)::before{
+                                content: '';
+                            }                 
+                        }//>li
+                    }//ul.grayInfo
+            
+                }//div.footer_bottom //하단 묶음
+            
+                >ul.footer_bottom_snsIcons{
+                    justify-content: flex-start; //모바일: (flex-start, flex-start);
+        
+                    >li{
+                        width: 3.7vw; height: 3.7vw;
+                        margin-right: 1.8vw;
+        
+                        &:nth-of-type(3){
+                        }
+                        >a{
+                            >img{
+                            }
+                        }
+                    }//>li
+                }//div.footer_bottom_snsIcons //SNS아이콘버튼들
+            }//div.footerWrapper       
+        }//>div.fp-overflow
+
+    }//footer //푸터배경
+//- - - - - - - - - - footer↑ - - - - - - - - - -
+}//div#allFloorWrapper
+
+    //전체 페이지 알려주는 선
+div.fullPage{
+    display: none;
+}//div.fullPage //전체 페이지 알려주는 선
+
+//기업단체구매 버튼 + 스크롤최상단이동 버튼
+div.wrapper_Btn{
+    right: 20px; bottom: 20px;
+
+    >a.bulkPurchase_btn{
+        display: none;
+        // font-size: 14px; //태블릿: 16px //모바일: 14px
+
+        &::after{
+            //선물상자 아이콘
+        }
+    }//>a.bulkPurchase_btn
+
+    >div.moveScrollTop_btn{
+        width: 60px; height: 60px; //태블릿: 56x56 //모바일: 48x48
+        font-size: 30px; //태블릿: 26px //모바일: 20px
+        //margin: 8px 4px 0 0; //태블릿: 12x4 //모바일: 8x4
+    }//>div.moveScrollTop_btn
+
+
+}//div.wrapper_Btn //기업단체구매 버튼 + 스크롤최상단이동 버튼
+
+}//@media(max-width: 896px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

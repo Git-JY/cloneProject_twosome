@@ -1,0 +1,119 @@
+@use './reset' as *;
+
+@media(max-width: 896px){
+
+//- - - - - - - - - - footer↓ - - - - - - - - - -
+footer{
+    // height: 56vw;
+    height: auto;
+    padding: 4vw 0; 
+
+    >div.footerWrapper{
+        // height: 48vw; 
+        height: auto; 
+
+        >div.footer_top{
+            // height: 32%; //모바일 height: 약 28%
+            height: auto; 
+            align-items: flex-start;
+            
+            >div.topLeft{
+                width: 100%; height: auto; //태블릿: 175x114 //모바일 100%x105
+                >a{
+                    font-size: 2vw;//태블릿: 20px //모바일 18px
+                    margin-bottom: 3vw ;
+                }
+            }//div.topLeft //상단좌측
+            
+            >div.topRight{
+                display: none;
+
+                >div.Address, >div.CustomerCenter{
+
+                }//div.Address
+                
+                >div.CustomerCenter{
+                    >b{
+                        
+                    }
+                    >ul{
+                        >li{
+                            
+                        }
+                    }
+                }//div.CustomerCenter
+                
+            }//div.topRight //상단우측
+    
+        }//div.footer_top //상단 묶음
+        
+        >div.footer_bottom{
+            //height: 68%; //모바일 height: 약 72%
+            padding-top: 3.4vw;
+
+            >ul.footer_bottom_menu_Btn{
+                margin-bottom: 2.3vw; //태블릿: //모바일: 보고 어림잡아보삼
+                >li{
+                    margin-right: 1.6vw; //모바일: 14px
+                    >a{
+                        font-size: 1.4vw;
+                    }
+                    >a.YellowFont{
+                    }
+                }//>li
+            }//ul.footer_bottom_menu_Btn 
+            
+            >ul.grayInfo{
+                justify-content: center; align-items: flex-start; flex-direction: column; //모바일: flex-direction: column;
+                >li{
+                    font-size: 1.4vw;
+                    margin-bottom: 1.2vw;
+
+                    &:nth-of-type(n+2)::before{
+                        content: '';
+                    }                 
+                }//>li
+            }//ul.grayInfo
+    
+        }//div.footer_bottom //하단 묶음
+    
+        >ul.footer_bottom_snsIcons{
+            justify-content: flex-start; //모바일: (flex-start, flex-start);
+
+            >li{
+                width: 3.7vw; height: 3.7vw;
+                margin-right: 1.8vw;
+
+                &:nth-of-type(3){
+                }
+                >a{
+                    >img{
+                    }
+                }
+            }//>li
+        }//div.footer_bottom_snsIcons //SNS아이콘버튼들
+    }//div.footerWrapper       
+
+}//footer //푸터배경
+//- - - - - - - - - - footer↑ - - - - - - - - - -
+
+}//@media(max-width: 896px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

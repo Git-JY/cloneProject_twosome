@@ -1,0 +1,155 @@
+@use './reset' as *;
+
+// - - - - - - - - - - @mixin, 변수 등 - - - - - - - - - - 
+
+body{
+    background-color: white;
+    @include flex(flex-start){flex-direction: column};
+    //min-width: 1285px; //임시
+}
+
+//- - - - - - - - - - div.wrapper↓ - - - - - - - - - -
+div.padding{
+    width: 100%;
+    @include flex();
+    padding: 172px 48px 240px;   // 태블릿: 136px 48px 0px; // 모바일: 88px 32px 0px;
+
+    div.wrapper{
+        //outline: 1px solid black;
+        width: 100%; height: 100%;
+        max-width: 1216px;
+
+        h1{
+            @include font(72px, 700, black); //태블릿: 56PX; //모바일: 32px;
+            line-height: 1.5;
+        }
+        
+        h2{
+            margin: 60px 0px; //태블릿: 44px //모바일: 28px
+            @include font(40px, 700, black); //태블릿: 32px //모바일: 24px
+            line-height: 1.5;
+        }
+    
+        >nav{ //모바일: display: none;
+            @include font(14px,inherit,#707070);
+            margin-bottom: 56px; //태블릿: 24px;
+    
+            >span{
+                vertical-align: middle;
+                &::after{
+                    content: '';
+                    display: inline-block;
+                    width: 3px; height: 3px;
+                    margin: 0px 8px;
+                    background: #333;
+                    vertical-align: middle;
+                }
+    
+                &:nth-of-type(2){
+                    @include font(inherit, 600, #d50037);
+                    &::after{
+                        content: '';
+                        font-family: 'Material Symbols Outlined';
+                        width: 12px; height: 12px;
+                        background-color: transparent;
+                        margin-bottom: 8px;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }//nav
+
+        >section{
+            margin-top: 120px;
+
+            &:nth-of-type(-n+2){
+                margin-top: 0px;
+            }
+
+            p{
+                font-family: 'Noto Sans KR' ,sans-serif;
+                //태블릿: font-size: 16px; 
+                color: #333;
+                margin-top: 32px; //태블릿: 16px //모바일: 12px
+            }
+        }
+    
+        >section.contents1{
+            >h1{
+            }
+
+            >i{
+                display: inline-block;
+                width: 100%;
+
+                >img{
+                    width: 100%;
+                }
+            }//i
+
+            >dl{
+                margin-top: 12px;
+
+                >dt{
+                    @include font(56px, 800, black); //태블릿: 48px; //모바일: 32px
+                }
+
+                >dd{
+                    @include font(32px, 700, #333); //태블릿: 24px; //모바일: 20px
+                    margin-top: 32px; //태블릿: 16px //모바일: 12px
+                    line-height: 130%;
+                    @include text();
+                }
+            }//dl
+        }//article.contents1    
+
+        >section.contents2{
+            >p{
+                position: relative; left: 2%;
+                width: 90%;
+                line-height: 130%;
+                // @include text();
+            }
+            
+        }//article.contents2 
+
+        >section.contents3{
+            >h2{
+
+            }
+
+            >p{
+                position: relative; left: 2%;
+                width: 80%;
+                line-height: 130%;
+                // @include text();
+            }
+             
+         }//article.contents3 
+    
+    }//div.wrapper 
+
+}//div.padding
+//- - - - - - - - - - div.wrapper↑ - - - - - - - - - -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

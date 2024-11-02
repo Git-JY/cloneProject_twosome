@@ -1,0 +1,115 @@
+@use './reset' as *; 
+
+@media(max-width: 1022px){
+
+//- - - - - - - - - - footer↓ - - - - - - - - - -
+footer{
+    height: 448px; //태블릿: 448px //모바일: 562px
+
+    >div.footerWrapper{
+        height: 368px; //태블릿: 368px //모바일: 497px
+        padding: 0px 32px; //모바일: 32px
+
+        >div.footer_top{
+            
+            >div.topLeft{
+                width: 177px; height: 114px; //태블릿: 175x114 //모바일 100%x105
+                >a{                    
+                    font-size: 20px;//태블릿: 20px //모바일 18px
+                }
+            }//div.topLeft //상단좌측
+            
+            >div.topRight{
+                width: 379px; height: 114px; //태블릿: 379x114 
+
+                >div.Address, >div.CustomerCenter{
+                    >b{
+                        font-size: 14px; //태블릿: 14PX
+                        margin-bottom: 10px; //태블릿: 10PX
+                    }
+                    >span{//Address
+                        font-size: 12px; //태블릿: 12PX
+                    }
+                    >ul{//CustomerCenter
+                        >li{
+                            font-size: 12px; //태블릿: 12PX
+                        }
+                    }//>ul
+                }//div.Address
+                
+                >div.CustomerCenter{
+                    >b{
+                        
+                    }
+                    >ul{
+                        >li{
+                            
+                        }
+                    }
+                }//div.CustomerCenter
+                
+            }//div.topRight //상단우측
+    
+        }//div.footer_top //상단 묶음
+        
+        >div.footer_bottom{
+            padding-top: 40px; //태블릿: 40PX //모바일: 32PX
+            >ul.footer_bottom_menu_Btn{
+                >li{
+                    >a{
+                        font-size: 12px; //태블릿: 12px
+                    }
+                    >a.YellowFont{
+                    }
+                }//>li
+            }//ul.footer_bottom_menu_Btn 
+            
+            >ul.grayInfo{
+                >li{
+                    font-size: 12px; //태블릿: 12px
+                    &:nth-of-type(n+2)::before{
+                    }
+                }//>li
+            }//ul.grayInfo
+    
+        }//div.footer_bottom //하단 묶음
+    
+        >ul.footer_bottom_snsIcons{
+            
+            >li{
+                &:nth-of-type(3){
+                }
+                >a{
+                    >img{
+                    }
+                }
+            }//>li
+        }//div.footer_bottom_snsIcons //SNS아이콘버튼들
+    }//div.footerWrapper
+
+
+}//footer //푸터배경
+//- - - - - - - - - - footer↑ - - - - - - - - - -
+
+
+}//@media(max-width: 1022px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

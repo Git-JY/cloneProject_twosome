@@ -1,0 +1,154 @@
+@use './reset' as *;
+
+//- - - - - - - - - - footer↓ - - - - - - - - - -
+footer{
+    width: 100%; height: 526px; //태블릿: 448px //모바일: 562px
+    background-color: #222;
+    padding-top: 20px; //내가 해둠 하면서 바꿔보삼
+
+    transition: all .3s;
+
+    @include flex(center, flex-start);
+
+    >div.footerWrapper{
+        max-width: 1312px; width: 100%;
+        height: 430px; //태블릿: 368px //모바일: 497px
+        padding: 0px 48px; //모바일: 32px
+
+        >div.footer_top{
+            width: 100%; height: 50%; //모바일 height: 약 28%
+            border-bottom: 1px solid rgba(255,255,255,0.15);;
+            @include flex(space-between);
+            
+            >div.topLeft{
+                width: 220px; height: 130px; //태블릿: 175x114 //모바일 100%x105
+                @include flex(space-between, flex-start){flex-direction:column};
+                >a{
+                    width: 100%;
+                    @include font(24px, 600, #fff);//태블릿: 20px //모바일 18px
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }//div.topLeft //상단좌측
+            
+            >div.topRight{
+                width: 450px; height: 136px; //태블릿: 379x114 
+                @include flex(flex-start, flex-start){flex-direction: column;};
+                >div.Address, >div.CustomerCenter{
+                    @include flex(center, flex-start){flex-direction: column;};
+                    >b{
+                        @include font(16px, 600, #fff); //태블릿: 14PX
+                        margin-bottom: 12px; //태블릿: 10PX
+                    }
+                    >span{//Address
+                        @include font(14px, 400, #777); //태블릿: 12PX
+                    }
+                    >ul{//CustomerCenter
+                        @include flex(flex-start);
+                        >li{
+                            @include font(14px, 400, #777); //태블릿: 12PX
+                            margin-right: 20px;
+                        }
+                    }//>ul
+                }//div.Address
+                
+                >div.CustomerCenter{
+                    margin-top: 30px;
+                    >b{
+                        
+                    }
+                    >ul{
+                        >li{
+                            
+                        }
+                    }
+                }//div.CustomerCenter
+                
+            }//div.topRight //상단우측
+
+        }//div.footer_top //상단 묶음
+        
+        >div.footer_bottom{
+            width: 100%; height: 50%; //모바일 height: 약 72%
+            @include flex(flex-start, flex-start){flex-direction: column;};
+            padding-top: 48px; //태블릿: 40PX //모바일: 32PX
+
+            >ul.footer_bottom_menu_Btn{
+                width: 100%; 
+                margin-bottom: 30px; //태블릿: //모바일: 보고 어림잡아보삼
+                @include flex(flex-start){flex-wrap: wrap;};
+                >li{
+                    margin-right: 40px; //모바일: 14px
+                    line-height: normal;
+                    >a{
+                        @include font(14px, 600, #fff); //태블릿: 12px
+                        
+                        &:hover{
+                            text-decoration: underline;
+                            text-decoration-color: #fff;
+                        }
+                    }
+                    >a.YellowFont{
+                        color: #f5ce3e;
+                    }
+                }//>li
+            }//ul.footer_bottom_menu_Btn 
+            
+            >ul.grayInfo{
+                @include flex(flex-start); //모바일: flex-direction: column;
+                margin-bottom: 16px;
+                >li{
+                    @include font(14px, 400, #777); //태블릿: 12px
+                    &:nth-of-type(n+2)::before{
+                        content: ' │';
+                    }
+                }//>li
+            }//ul.grayInfo
+
+        }//div.footer_bottom //하단 묶음
+
+        >ul.footer_bottom_snsIcons{
+            @include flex(flex-end, flex-start); //모바일: (flex-start, flex-start);
+
+            >li{
+                width: 32px; height: 32px;
+                margin-right: 15px;//알아서 보고 바꾸삼
+                &:nth-of-type(3){
+                    margin-right: 0px;
+                }
+                >a{
+                    width: 100%;
+                    >img{
+                        width: 100%;
+                    }
+                }
+            }//>li
+        }//div.footer_bottom_snsIcons //SNS아이콘버튼들
+    }//div.footerWrapper
+
+}//footer //푸터배경
+//- - - - - - - - - - footer↑ - - - - - - - - - -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

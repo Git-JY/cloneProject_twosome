@@ -1,0 +1,140 @@
+/* 1. 폰트들 */
+@font-face {
+    font-family: 'Mark Pro';
+    src: url('../../common_font/Mark-Pro/transfonter/MarkPro-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mark Pro';
+    src: url('../../common_font/Mark-Pro/transfonter/MarkPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mark Pro';
+    src: url('../../common_font/Mark-Pro/transfonter/MarkPro-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '../../common_font/Mark-Pro/transfonter/Mark Pro';
+    src: url('MarkPro.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//Noto Sans KR
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display+SC:ital,wght@1,400;1,700;1,900&family=Playfair+Display:wght@400;600;700;800;900&family=Roboto:wght@100&display=swap');
+
+//화살표 폰트
+@font-face {
+    font-family: 'open-arrow';
+    src: url('../../common_font/open-arrow/font/OpenArrow-Regular.eot') format('embedded-opentype'),
+         url('../../common_font/open-arrow/font/OpenArrow-Regular.woff2') format('woff2'),
+         url('../../common_font/open-arrow/font/OpenArrow-Regular.woff') format('woff'),
+         url('../../common_font/open-arrow/font/OpenArrow-Regular.otf') format('opentype'),
+         url('../../common_font/open-arrow/font/OpenArrow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+2190-21ff;
+}
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+// 스크롤 화살표 아이콘
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+//nav ▽화살표
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+//nav △화살표
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+//---------- ---------- ---------- ---------- ----------
+/* 2. mixin */
+@mixin flex($x: center, $y: center){
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+
+    @content;
+}
+
+@mixin font($x: inherit, $y: inherit, $z: inherit){
+    font-size: $x;
+    font-weight: $y;
+    color: $z;
+    
+    @content;
+}
+
+@mixin text(){
+    word-break: keep-all;
+    word-wrap: break-word;
+
+    @content;
+}
+
+//---------- ---------- ---------- ---------- ----------
+/* 3. 변수 */
+$gnb_fontSize: 14;
+$headerColor: black;
+$headHeight: 100px;
+$activeColor: rgba(213, 64, 0, 0.9);
+
+//---------- ---------- ---------- ---------- ----------
+/* 4. 애니메이션 */
+@keyframes ani1 {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-300%);
+    }
+}
+
+@keyframes ani2 {
+        from{
+            opacity: 100%;
+        }
+    to{
+        opacity: 0%;
+    }
+}
+
+//---------- ---------- ---------- ---------- ----------
+/* 5. 설정 리셋 */
+html{
+    font-family: 'Mark Pro','Noto Sans KR','Apple SD Gothic Neo',sans-serif;
+    font-size: 18px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    line-height: 100%;
+}
+//- - - - - - - - - - - - - - - - - - - -
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, ol, li{
+    list-style-type: none;   
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+
+
+

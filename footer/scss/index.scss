@@ -1,0 +1,6 @@
+@forward './pc';
+
+//타블렛 1022px이하
+@forward './tablet';
+//모바일 896px이하
+@forward './mobile';

@@ -1,0 +1,182 @@
+@use './reset' as *;
+
+// - - - - - - - - - - @mixin, 변수 등 - - - - - - - - - - 
+
+//타블렛 1022px이하
+@media(max-width: 1022px){
+
+body{
+}
+
+//- - - - - - - - - - div.wrapper↓ - - - - - - - - - -
+div.padding{
+    padding: 136px 48px 0px;
+
+    div.wrapper{  
+        //outline: 1px solid black;
+
+        h2{
+            font-size: 32px;
+        }
+    
+        >nav{
+            margin-bottom: 24px; //태블릿: 24px;
+    
+            >span{
+
+                &::after{
+
+                }
+    
+                &:nth-of-type(3){
+
+                    &::after{
+
+                    }
+                }
+                
+            }
+        }//nav
+    
+        >article.contents1{
+            >h1{
+                font-size: 56px;
+            }
+    
+            >div.contents1_1{
+    
+                >dl{
+                    height: 236px; padding: 52px 56px; //태블릿: 236px 52x56//모바일: 230px, 44x32;
+    
+                    &::before{
+                        width: 160px; height: 160px; //태블릿 160x160 //모바일 120x120
+                        right: -55px; top: -55px; //태블릿: -55x-55 //모바일: 
+                    }
+                    &:nth-of-type(2){
+                        
+                        &::before{
+                            right: -20px; top: -20px; //모바일: -13x-13
+                            width: 120px; height: 120px; //태블릿 120x120 //모바일: 90x90
+                        }
+                    }
+    
+                    >dt{
+                        font-size: 16px;
+                        margin-bottom: 36px; //태블릿: 36px //모바일: 28px
+                    }
+                    >dd{
+                        font-size: 24px;
+                    }
+                }//dl
+            }//div.contents1_1
+    
+            >dl.contents1_2{
+                height: 270px; //태블릿: 270px //모바일: 300px
+                padding: 60px 64px; //태블릿: 60x64 //모바일: 44x32
+                >video.bg{
+                }
+
+                >dt{
+                    font-size: 16px;
+                    margin-bottom: 28px; //태블릿: 28px 
+                }
+
+                >dd{
+                    font-size: 20px;
+
+                    >em{
+                    }
+
+                    >strong{
+                        margin-top: 8px; //태블릿: 8px
+                        font-size: 40px;
+                    }
+                }
+            }//dl.contents1_2
+        }//article.contents1
+    
+        >article.contents2{
+            margin: 80px 0px; //태블릿: 80px //모바일: 64px;
+            >h2{
+    
+            }
+    
+            >ul{        
+                height: 276px; // 태블릿: 276px // 모바일 241px
+
+                >li{
+                    padding: 40px 10px; // 태블릿: 40px 10px
+    
+                    &:nth-of-type(3){
+                        
+                    }
+    
+                    >i{
+                        >img{
+                        }
+                    }
+    
+                    >strong{
+                        margin: 12px 0px 8px; //태블릿: 12px 0px 8px 
+                        font-size: 16px;
+                    }
+
+                    >p{
+                        font-size: 20px;
+                    }
+                }//li
+            }//ul
+    
+        }//article.contents2
+    
+        >article.contents3{
+            >h2{
+    
+            }
+
+            >ul{
+                height: 208px; //태블릿: 208px //모바일: 519px
+
+                >li{
+                    padding: 48px 16px; //태블릿: 48px 16px //모바일: 48px 10px 0px
+
+                    
+
+                    >i{
+                        >img{
+                        }
+                    }
+                    >p{
+                        font-size: 20px;
+                    }
+                        
+                }//li
+            }//ul      
+        }//article.contents3
+
+    }//div.wrapper 
+
+}//div.padding
+//- - - - - - - - - - div.wrapper↑ - - - - - - - - - -
+
+}// @media(max-width: 1022px) //타블렛 1022px이하 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

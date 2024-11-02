@@ -1,0 +1,604 @@
+@use './reset' as *; 
+
+//2, 3, 4 section에서 1380px에서 한번 더 나눠야 함
+
+@media(max-width: 1380px){
+
+::-webkit-scrollbar{}
+ 
+body{
+}
+    
+
+div#allFloorWrapper{
+
+    //모든 페이지
+    >section{
+        >div.fp-overflow{
+            h1{
+                &::after{//제목 옆의 빨간네모
+                }
+            }//h1
+        }//>div.fp-overflow
+
+    }//section //모든 페이지
+
+    >section.main{//1page
+        >div.fp-overflow{
+            >ul.main_slide{//슬라이드(사진묶음)
+                >li{
+    
+                    >picture{ //메인_1 커피배경, 메인_2 여러 케잌배경
+                        >source{
+                        }
+                        >img{
+                        }
+                    }
+                }//li
+            }//ul.main_slide //슬라이드
+    
+            >div.pagination_wrap{//페이지네이션
+                
+                //좌측 화살표
+                >div.leftBtn{
+                }
+                // 전체페이지수/현제페이지수
+                >span.pagination_pageNumber{
+                    >span:nth-of-type(1){
+                    }
+                    >span:nth-of-type(2){
+                    }
+                    >span:nth-of-type(3){
+                    }
+                }
+                //우측 화살표
+                >div.rightBtn{
+                }
+            }//div.pagination_wrap //페이지네이션
+        }//>div.fp-overflow
+    }//section.main //1페이지
+
+//////////////////////////////////////////////////////////////////////
+
+    >section.menuStory{//2page
+        >div.fp-overflow{
+            >div.menuStory_Wrapper{
+                // outline: 1px solid red;
+    
+                //☆
+                min-width: auto;
+                width: 90vw;
+    
+                >h1{//MENU STORY
+                }//h1
+                
+                >ul.text_btn{
+    
+                    >li{
+                        >span{ 
+                        }
+                        >b{    
+                        }
+                    }//>li
+    
+                    //클릭이벤트 임시
+                    >li.active{
+                        >span{
+                        }
+                        >b{
+                        }
+                    }//>li.active
+    
+                }//ul.text_btn //COFFEE STORY~DELI STORY(버튼+설명 총 3개 묶음)
+        
+                >div.slides_wrapper{ //슬라이드 + 페이지네이션
+    
+                    >ul.topEx_mobile{
+                        display: none;
+                    }
+    
+                    width: 60%; 
+                    >div.img_slides{ //슬라이드
+    
+                        >ul{ //총 3개의 모든 슬라이드
+                            &.active{//첫번째 슬라이드
+                            }//&.active
+                            
+                            >li{//각각의 사진
+    
+     
+                                &.active{//첫번째 사진
+                                }//&.active
+                                >a{
+                                    >img{
+                                    }//>img
+    
+                                }//>a
+                            }//>li
+                        }//>div.img_slides>ul //총 3개의 모든 슬라이드
+    
+                        >ul.img_slide1_coffeeStory{
+                            >li{
+                                >a{
+                                    >img{
+        
+                                    }
+                                }
+                            }
+                        }//ul.img_slide1_coffeeStory // 슬라이드1_coffeeStory(총4개의 li태그)
+        
+                        >ul.img_slide2_dessertStory{
+                            >li{
+                                >a{
+                                    >img{
+        
+                                    }
+                                }
+                            }
+                        }//ul.img_slide2_dessertStory // 슬라이드2_dessertStory(총7개의 li태그)
+        
+                        >ul.img_slide3_deliStory{
+                            >li{
+                                >a{
+                                    >img{
+        
+                                    }
+                                }
+                            }
+                        }//ul.img_slide3_deliStory // 슬라이드3_deliStory(총5개의 li태그)
+                    }//div.img_slides //슬라이드 //총 3개의 슬라이드 묶음 COFFEE STORY~DELI STORY
+        
+                    >div.img_slide_pagination{//페이지네이션
+    
+                        //좌측 화살표
+                        >div.leftBtn{
+                        }
+                        //음식이름
+                        >span{
+                            //태블릿: font-size: 14px
+                        }
+                        //우측 화살표
+                        >div.rightBtn{
+                        }
+                    }//div.img_slide_pagination //페이지네이션
+        
+        
+                }//div.slides_wrapper //슬라이드 + 페이지네이션
+            }//div.menuStory_Wrapper
+        }//>div.fp-overflow
+    
+    }//section.menuStory //2페이지
+
+//////////////////////////////////////////////////////////////////////
+
+    >section.aList{//3page
+        >div.fp-overflow{
+            >div.text_wrap{
+    
+                //☆
+                min-width: auto;
+                width: 90vw;
+    
+                >h1{//에이리스트
+                }
+                >strong{
+                }
+                >span{
+                }
+                >p{
+                }
+            }//div.text_wrap //텍스트 전체 묶음
+        }//>div.fp-overflow
+
+    }//section.aList //3페이지
+
+//////////////////////////////////////////////////////////////////////
+
+    >section.brandSupport{//4page
+        >div.fp-overflow{
+            >div.brandSupport_exWrapper{
+    
+                //☆
+                min-width: auto;
+                width: 90vw;
+    
+                >h1{
+                    
+                }//h1
+                
+                >div.slides_wrapper{//슬라이드 + 페이지네이션            
+                    >div.slideFlame{
+                        >ul.img_slide{//슬라이드
+                            >li{         
+                                     
+                                >div.spanAndImg{
+    
+                                    >span{
+    
+                                        &::before{
+                                        }
+                                        //outline: 1px solid black;             
+                                    }
+                                    >p{                     
+                                        >img{
+                                        }
+                                       
+                                    }//p
+        
+                                }//div.spanAndImg
+                
+                                >div.ex{
+    
+                                    >p{//아이콘 이미지
+                                        >img{
+                                        }
+                                    }
+                                    >a{//글씨
+                                        >strong{
+                                        }//>strong
+                                        &::after{//화살표
+                                        }//&::after
+                                    }//>a
+                                    
+                                    >div{
+                                    }//>div
+                                }//div.ex //글씨설명 묶음
+                            }//li //슬라이드의 각 요소                           
+                
+                        }//ul.img_slide //슬라이드
+                    }//>div.slideFlame
+        
+                    >div.pagination_wrap{//페이지네이션 
+    
+                        >div.leftBtn{
+                        }//>div.leftBtn
+    
+                        // 전체페이지수/현제페이지수
+                        >span.pagination_pageNumber{
+                            >span:nth-of-type(1){
+                            }
+                            >span:nth-of-type(2){
+                            }
+                            >span:nth-of-type(3){
+                            }
+                        }//>span.pagination_pageNumber
+    
+                        >div.rightBtn{
+                        }//>div.rightBtn
+                        
+                    }//div.pagination_wrap //페이지네이션
+        
+                }//div.slides_wrapper //슬라이드 + 페이지네이션
+            }//>div.brandSupport_exWrapper
+        }//>div.fp-overflow
+
+    }//section.brandSupport //4페이지
+
+
+//////////////////////////////////////////////////////////////////////
+    
+    >section.franchise{//5page
+        >div.fp-overflow{
+            >div.background{
+    
+                >ul.dots{
+                    >li{
+    
+    
+                        &:nth-of-type(1){
+                        }
+                        &:nth-of-type(2){
+                        }
+                        &:nth-of-type(3){
+                        }
+                        &:nth-of-type(4){
+                        }
+    
+                        &:nth-of-type(5){
+                        }
+                        &:nth-of-type(6){
+                        }
+                        &:nth-of-type(7){
+                        }
+                        &:nth-of-type(8){
+                        }
+    
+                        &:nth-of-type(9){
+                        }
+                        &:nth-of-type(10){
+                        }
+                        &:nth-of-type(11){
+                        }
+                        &:nth-of-type(12){
+                        }
+                        
+                        
+                    }
+                }//ul.dots //점 배경
+                
+                >ul.imgs{
+    
+                    >li{
+    
+                        &:nth-of-type(1){
+                        }
+                        &:nth-of-type(2){
+                        }
+                        &:nth-of-type(3){
+                        }
+                        &:nth-of-type(4){
+                        }
+                        &:nth-of-type(5){
+                        }
+                        &:nth-of-type(6){
+                        }
+                        &:nth-of-type(7){
+                        }
+                        &:nth-of-type(8){
+                        }
+                        
+    
+                        >dl{
+                            >dd{
+                                >img{
+        
+                                }
+                            }
+                            >dt{
+                            }
+                        }//dl
+    
+                    }//li
+                }//ul.imgs //사진 배경
+            }//div.background
+    
+            >div.ex_wrap{
+    
+                >h1{
+                }
+                >strong{  
+                }
+                >p{
+                }
+                >div.btn{
+    
+                    >div{
+    
+                        >a{
+    
+                            &::after{//화살표
+                            }   
+    
+                            &::before{//검은배경
+                            }
+    
+                            // a hover시
+                            &:hover{
+                                &::before{
+                                }
+                            }//hover
+    
+                        }//a                    
+    
+                        &:nth-of-type(1){
+                        }
+    
+    
+    
+                    }//div //각 버튼들
+                }//div.btn            
+            }//div.ex_wrap
+        }//>div.fp-overflow
+        
+        
+    }//section.franchise //5페이지
+    
+//////////////////////////////////////////////////////////////////////
+    
+    >section.newAndNotice{//6page
+        >div.fp-overflow{
+            div.container{
+    
+                >div.left{
+                    >h1{
+                        
+                    }
+                    >span{
+            
+                    }
+    
+                    >p{
+                        >img{
+                        }
+                    }//>p
+                }//div.left
+            
+                >div.right{
+                    >ul{
+    
+                        >li{
+                            
+                            &::before{//검은배경 
+                            }//&::before
+    
+                            >a{
+    
+                                >em{
+                                }
+    
+                                >strong{
+                                }
+    
+                                >span{
+                                }
+                            }//a
+    
+                            &:hover{
+                                &::before{
+                                }
+                                >a{
+                                    >strong{            
+                                    }
+                                    >span{
+                                    }
+                                }//>a
+                            }//&:hover
+                        }//li
+                    }//>ul
+                }//>div.right
+    
+                >div.pagination_wrap{//페이지네이션 
+    
+                    >div.leftBtn{
+                    }
+                    // 전체페이지수/현제페이지수
+                    >span.pagination_pageNumber{
+                        >span:nth-of-type(1){
+                        }
+                        >span:nth-of-type(2){
+                        }
+                        >span:nth-of-type(3){
+                        }
+                    }//>span.pagination_pageNumber
+    
+                    >div.rightBtn{
+                    }//>div.rightBtn
+                    
+                }//div.pagination_wrap //페이지네이션
+                
+            }//div.container
+        }//>div.fp-overflow
+
+    }//section.newAndNotice //6페이지
+
+//- - - - - - - - - - footer↓ - - - - - - - - - -
+    footer{
+        >div.fp-overflow{
+            >div.footerWrapper{
+    
+                >div.footer_top{
+                    
+                    >div.topLeft{
+                        >a{
+                            &:hover{
+                            }
+                        }
+                    }//div.topLeft //상단좌측
+                    
+                    >div.topRight{
+                        >div.Address, >div.CustomerCenter{
+                            >b{
+                            }
+                            >span{//Address
+                            }
+                            >ul{//CustomerCenter
+                                >li{
+                                }
+                            }//>ul
+                        }//div.Address
+                        
+                        >div.CustomerCenter{
+                            >b{
+                                
+                            }
+                            >ul{
+                                >li{
+                                    
+                                }
+                            }
+                        }//div.CustomerCenter
+                        
+                    }//div.topRight //상단우측
+            
+                }//div.footer_top //상단 묶음
+                
+                >div.footer_bottom{
+    
+                    >ul.footer_bottom_menu_Btn{
+                        >li{
+                            >a{
+                                
+                                &:hover{
+                                }
+                            }
+                            >a.YellowFont{
+                            }
+                        }//>li
+                    }//ul.footer_bottom_menu_Btn 
+                    
+                    >ul.grayInfo{
+                        >li{
+                            &:nth-of-type(n+2)::before{
+                            }
+                        }//>li
+                    }//ul.grayInfo
+            
+                }//div.footer_bottom //하단 묶음
+            
+                >ul.footer_bottom_snsIcons{
+    
+                    >li{
+                        &:nth-of-type(3){
+                        }
+                        >a{
+                            >img{
+                            }
+                        }
+                    }//>li
+                }//div.footer_bottom_snsIcons //SNS아이콘버튼들
+            }//div.footerWrapper
+        }//>div.fp-overflow
+        
+    }//footer //푸터배경
+//- - - - - - - - - - footer↑ - - - - - - - - - -
+
+}//div#allFloorWrapper
+
+    //전체 페이지 알려주는 선
+div.fullPage{
+
+    >span{
+        
+    }
+    >p{
+
+        >span{
+        }
+    }//>p
+}//div.fullPage //전체 페이지 알려주는 선
+
+//기업단체구매 버튼 + 스크롤최상단이동 버튼
+div.wrapper_Btn{
+
+    >a.bulkPurchase_btn{
+
+        &::after{
+        }
+    }//>a.bulkPurchase_btn
+
+    >div.moveScrollTop_btn{
+
+    }//>div.moveScrollTop_btn
+
+}//div.wrapper_Btn //기업단체구매 버튼 + 스크롤최상단이동 버튼
+
+}//@media(max-width: 1038px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

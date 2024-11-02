@@ -1,0 +1,282 @@
+@use './reset' as *;
+
+// - - - - - - - - - - @mixin, 변수 등 - - - - - - - - - - 
+
+//타블렛 1022px이하
+@media(max-width: 1022px){
+
+body{
+}
+
+//- - - - - - - - - - div.wrapper↓ - - - - - - - - - -
+div.padding{
+    padding: 136px 0px 0px;
+
+    div.wrapper{
+        //outline: 1px solid black;
+        
+        h2{
+            font-size: 32px;
+        }
+    
+        >nav{ 
+            margin-bottom: 24px; //태블릿: 24px;
+    
+            >span{
+                &::after{
+                }
+    
+                &:nth-of-type(3){
+                    @include font(inherit, 600, #d50037);
+                    &::after{
+                        content: 'expand_more';
+                        font-family: 'Material Symbols Outlined';
+                        width: 12px; height: 12px;
+                        background-color: transparent;
+                        margin-bottom: 8px;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }//nav
+
+        >article{
+            margin-top: 80px; // 태블릿: 80px //모바일: 24px
+            &:nth-of-type(1){
+            }
+        }//>article
+    
+        >article.contents1{
+            >h1{
+                font-size: 56px; 
+            }
+
+            >ul{
+                margin-top: 48px; //모바일: 32px
+                
+                >li.left{
+                    flex-basis: 49%; //태블릿: flex-basis: 49%;                   
+                    padding-right: 1vw; //태블릿: padding-right: 1vw;
+
+                    >dl{
+                        >dt{
+                            font-size: 48px; //태블릿 48px //모바일 32px
+                            margin-bottom: 24px; //태블릿 24px //모바일 20px
+                        }
+
+                        >dd{
+                            font-size: 24px;
+
+                            br{
+                            }
+
+                            br.on{
+                            }
+                        }
+                        margin-bottom: 48px;//태블릿 48px //모바일: 32px
+                    }
+
+                    >p{
+                        font-size: 16px;
+                    }
+
+                }//>li.left
+
+                >li.right{
+                    flex-basis: 48%; //태블릿: flex-basis: 48%;
+                    >i{
+                        >img{
+                        }
+                    }
+                }//>li.right
+            }//>ul //li.left와 li.right묶음
+        }//article.contents1
+
+        >article.contents2{
+            >h2{
+
+            }
+
+            >ul.special_coffee_list{
+                height: 707px; //태블릿: 707px
+
+                >li{
+
+                    >h4.top{
+                        height: 210px; //태블릿: 210px //모바일: 191px
+                        padding: 40px 0px; //태블릿: 40px //모바일: 32px
+                        margin-bottom: 40px; //태블릿: 40px //모바일: 32px
+                        
+                        >i{
+                            >img{
+
+                            }
+                        }
+
+                        >strong{
+                            font-size: 20px;
+                            margin-top: 16px; //알아서 맞추기
+                        }
+
+                        >span{
+                            font-size: 14px;
+                            margin-top: 6px; //태블릿: 6px
+
+                        }
+                    }//h4.top
+
+                    >dl{
+                        >dt{    
+                            font-size: 18px; //태블릿 18px //모바일: 16px
+                        }
+
+                        >dd{
+                            margin-top: 10px; //태블릿: 10px //모바일: 8px
+                            padding: 0px 24px; //태블릿: 24px //모바일: 24px
+                            font-size: 14px; //태블릿: 14px
+                        }
+                    }
+
+                    >p{
+                        font-size: 18px; //태블릿: 18px //모바일: 16px
+                        margin: 32px 0px 12px; //태블릿: 32 12          
+                    }
+
+                    >ul:nth-of-type(1){ //체크
+                        height: 96px; //태블릿: 96px
+                        
+                        >li{
+                            font-size: 14px; //태블릿: 14px
+                            
+                            &::before{
+                            }
+                        }
+                    }
+
+                    >ul:nth-of-type(2){//산미 바디
+                        margin-bottom: 32px; //태블릿: 32px
+
+                        >li{
+                            margin-top: 12px;//태블리: 12px 
+
+                            >span{//산미, 바디 (글자부분)
+                                font-size: 14px; //태블리: 14px 
+                                margin-right: 12px; //태블릿 12px
+                            }
+                            
+                            >ul{//동그라미 묶음
+                                width: 126px; height: 21px; //태블릿: 126x21
+
+                                >li{//각 동그라미
+
+                                }
+                            }
+                        }//li
+                    }//ul 
+
+                    //각 li 1번째, 2번째, 3번째
+                    &:nth-of-type(1){
+                        >h4.top{}
+
+                        // 산미, 바디     > 산미
+                        >ul:nth-of-type(2)>li:nth-of-type(1)>ul>li:nth-of-type(-n+2){
+                        }//빨강 동그라미
+                        // 산미, 바디     > 바디
+                        >ul:nth-of-type(2)>li:nth-of-type(2)>ul>li:nth-of-type(-n+5){
+                        }//빨강 동그라미
+                    }
+
+                    &:nth-of-type(2){
+                        >h4.top{}
+
+                        // 산미, 바디     > 산미
+                        >ul:nth-of-type(2)>li:nth-of-type(1)>ul>li:nth-of-type(-n+4){
+                        }//빨강 동그라미
+                        // 산미, 바디     > 바디
+                        >ul:nth-of-type(2)>li:nth-of-type(2)>ul>li:nth-of-type(-n+3){
+                        }//빨강 동그라미
+                    }
+
+                    &:nth-of-type(3){
+                        >h4.top{} 
+
+                        // 산미, 바디     > 산미
+                        >ul:nth-of-type(2)>li:nth-of-type(1)>ul>li:nth-of-type(-n+2){
+                        }//빨강 동그라미
+                        // 산미, 바디     > 바디
+                        >ul:nth-of-type(2)>li:nth-of-type(2)>ul>li:nth-of-type(-n+4){
+                        }//빨강 동그라미
+                    }
+                }//ul.special_coffee_list>li
+
+            }//ul.special_coffee_list
+        }//>article.contents2
+
+        >article.contents3{
+            h2{}
+            ul.coffeeAndDrink_s{
+                height: 434px; //태블릿: 434px //모바일: auto
+
+                li{
+                    &:nth-of-type(1){
+                    }
+
+                    span{// 사진 내부 이름표
+                    }
+
+                    i{
+                        img{
+                        }
+                    }
+
+                    dl{
+                        dt{
+                            font-size: 20px; //태블릿: 20px 모바일: 18px
+                        }
+
+                        dd{
+                            font-size: 14px; //태블릿: 14px
+
+                        }
+                    }//dl
+
+                    p.txt_up{
+                        margin-top: 16px; //모바일: 16px //모바일: 14px
+                        font-size: 14px; //태블릿: 14px //모바일: 16px
+
+                    }//p.txt_up
+
+                    p.txt_down{
+                        margin-top: 12px; //태블릿: 12px //모바일: 8px
+                        font-size: 12px; //태블릿: 12px
+
+                    }//p.txt_down
+                }//ul.coffeeAndDrink_s>li 4개
+            }//ul.coffeeAndDrink_s
+        }//>article.contents3
+    
+    }//div.wrapper 
+
+}//div.padding
+//- - - - - - - - - - div.wrapper↑ - - - - - - - - - -
+
+}// @media(max-width: 1022px) //타블렛 1022px이하 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
