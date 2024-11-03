@@ -245,7 +245,7 @@ div#allFloorWrapper{
 
     >section.main{//1page
         >div.fp-overflow{
-            height: 85vh;
+            height: 85lvh;
             >ul.main_slide{//슬라이드(사진묶음)
                 >li{
                     >picture{ //메인_1 커피배경, 메인_2 여러 케잌배경
@@ -630,13 +630,13 @@ div#allFloorWrapper{
     
     >section.franchise{//5page
         >div.fp-overflow{
-            height: 80vh;
+            height: 80lvh;
     
             >div.background{
                 >ul.dots{
                     >li{
                         // width: 1vw; height: 1vw
-                        width: 1vh; height: 1vh;
+                        width: 1lvh; height: 1lvh;
                     }
                 }//>ul.dots
     
@@ -645,16 +645,16 @@ div#allFloorWrapper{
                         >dl{
                             >dd{
                                 // width: 19vw; height: 19vw;
-                                width: 13vh; height: 13vh;
+                                width: 13lvh; height: 13lvh;
                             }
                             >dt{
                                 // height: 3.7vw;
                                 // border-radius: 4vw;
                                 // padding: 0 1.9vw;
                                 // font-size: 1.4vw;
-                                height: 2.5vh;
-                                font-size: 1.2vh;
-                                padding: 0 1.2vh;
+                                height: 2.5lvh;
+                                font-size: 1.2lvh;
+                                padding: 0 1.2lvh;
                             }
                         }//>dl
                     }//>li

@@ -2040,7 +2040,7 @@ div.wrapper_Btn.lastFloor {
     margin-left: 1vw;
   }
   div#allFloorWrapper > section.main > div.fp-overflow {
-    height: 85vh;
+    height: 85lvh;
   }
   div#allFloorWrapper > section.main > div.fp-overflow > div.pagination_wrap {
     display: none;
@@ -2291,20 +2291,20 @@ div.wrapper_Btn.lastFloor {
     height: 4vw;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow {
-    height: 80vh;
+    height: 80lvh;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow > div.background > ul.dots > li {
-    width: 1vh;
-    height: 1vh;
+    width: 1lvh;
+    height: 1lvh;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow > div.background > ul.imgs > li > dl > dd {
-    width: 13vh;
-    height: 13vh;
+    width: 13lvh;
+    height: 13lvh;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow > div.background > ul.imgs > li > dl > dt {
-    height: 2.5vh;
-    font-size: 1.2vh;
-    padding: 0 1.2vh;
+    height: 2.5lvh;
+    font-size: 1.2lvh;
+    padding: 0 1.2lvh;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow > div.ex_wrap {
     padding: 0px;
