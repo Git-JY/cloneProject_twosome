@@ -390,7 +390,7 @@ nav > ul.head_gnb_vertical > li.active > ul {
 nav > ul.head_gnb_vertical > li.gray > a {
   color: #707070;
 }
-nav > ul.head_gnb_vertical > li:nth-child(-n+4) {
+nav > ul.head_gnb_vertical > li:nth-child(-n+4) > a {
   -webkit-text-decoration: rgba(213, 64, 0, 0.5) underline;
           text-decoration: rgba(213, 64, 0, 0.5) underline;
   text-underline-offset: 0.2em;
@@ -398,6 +398,7 @@ nav > ul.head_gnb_vertical > li:nth-child(-n+4) {
 nav > ul.head_gnb_vertical > li:nth-child(-n+4) > ul.head_lnb > li:first-child {
   -webkit-text-decoration: rgba(213, 64, 0, 0.5) underline;
           text-decoration: rgba(213, 64, 0, 0.5) underline;
+  text-underline-offset: 0.2em;
 }
 nav > div.head_gnb_vertical_bottom {
   position: absolute;
@@ -1636,7 +1637,7 @@ div.wrapper_Btn.lastFloor {
   header > .head_El > div.head_right > .Language {
     width: 84px;
     height: 30px;
-    margin-right: 60px;
+    margin-right: 30px;
   }
   header > .head_El > div.head_right > .verMenu_btn {
     width: 22px;
@@ -1945,11 +1946,11 @@ div.wrapper_Btn.lastFloor {
     height: 3.5vw;
   }
   nav > ul.head_gnb_vertical {
-    font-size: 2.8vw;
-    margin-top: 3.6vw;
+    font-size: 3.5vw;
+    margin-top: 5vw;
   }
   nav > ul.head_gnb_vertical > li:not(:first-child) {
-    margin-top: 3.8vw;
+    margin-top: 3.5vw;
   }
   nav > ul.head_gnb_vertical > li:first-child {
     margin-top: 0px;
@@ -1974,10 +1975,10 @@ div.wrapper_Btn.lastFloor {
     margin-top: 1.5vw;
   }
   nav > ul.head_gnb_vertical > li > ul.head_lnb > li > a {
-    font-size: 1.9vw;
+    font-size: 2.1vw;
   }
   nav > ul.head_gnb_vertical > li > ul.head_lnb > li.mini > a {
-    font-size: 1.6vw;
+    font-size: 2vw;
   }
   nav > ul.head_gnb_vertical > li.active > a:before {
     margin-right: 1.2vw;
@@ -2040,7 +2041,7 @@ div.wrapper_Btn.lastFloor {
     margin-left: 1vw;
   }
   div#allFloorWrapper > section.main > div.fp-overflow {
-    height: 85lvh;
+    height: 85vh;
   }
   div#allFloorWrapper > section.main > div.fp-overflow > div.pagination_wrap {
     display: none;
@@ -2291,20 +2292,20 @@ div.wrapper_Btn.lastFloor {
     height: 4vw;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow {
-    height: 80lvh;
+    height: 80vh;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow > div.background > ul.dots > li {
-    width: 1lvh;
-    height: 1lvh;
+    width: 1vh;
+    height: 1vh;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow > div.background > ul.imgs > li > dl > dd {
-    width: 13lvh;
-    height: 13lvh;
+    width: 13vh;
+    height: 13vh;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow > div.background > ul.imgs > li > dl > dt {
-    height: 2.5lvh;
-    font-size: 1.2lvh;
-    padding: 0 1.2lvh;
+    height: 2.5vh;
+    font-size: 1.2vh;
+    padding: 0 1.2vh;
   }
   div#allFloorWrapper > section.franchise > div.fp-overflow > div.ex_wrap {
     padding: 0px;

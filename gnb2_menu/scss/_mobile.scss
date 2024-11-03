@@ -9,13 +9,13 @@ body{
 
 //- - - - - - - - - - div.wrapper↓ - - - - - - - - - -
 div.padding{
-    padding: 14vw 0px 0px;
+    padding: 17vw 0px 0px;
     
     div.wrapper{
     
         //outline: 1px solid black;
         h2{
-            font-size: 2.8vw;
+            font-size: 3.5vw;
             margin: 2.5vw 0px;
         }
     
@@ -44,7 +44,7 @@ div.padding{
     
         >article.contents1{
             >h1{
-                font-size: 3.7vw;
+                font-size: 4vw;
                 margin-left: 3.5vw; margin-right: 3.5vw; 
                 margin-bottom: 2vw;
             }
@@ -54,20 +54,21 @@ div.padding{
                 flex-direction: column-reverse; //모바일 direction: column-reverse
 
                 >li.left{
-                    transform: translateY(-4.7vw);                   
+                    transform: translateY(-5vw);                   
                     padding-right: 0px; //태블릿: padding-right: 1vw; //모바일 0px
                     margin-left: 3.5vw; margin-right: 3.5vw;
+                    margin-bottom: 4vw;
 
                     >dl{
-                        margin-bottom: 3.6vw; //태블릿 48px //모바일: 32px
+                        margin-bottom: 3.5vw; //태블릿 48px //모바일: 32px
 
                         >dt{
-                            font-size: 3.7vw; //태블릿 48px //모바일 32px
-                            margin-bottom: 2.5vw; //태블릿 24px //모바일 20px
+                            font-size: 4vw; //태블릿 48px //모바일 32px
+                            margin-bottom: 3vw; //태블릿 24px //모바일 20px
                         }
 
                         >dd{
-                            font-size: 2.4vw;
+                            font-size: 2.6vw;
                             line-height: 140%;
 
                             br{
@@ -83,7 +84,7 @@ div.padding{
                     }
 
                     >p{
-                        font-size: 1.9vw;
+                        font-size: 2.4vw;
                     }
 
                 }//>li.left
@@ -111,43 +112,42 @@ div.padding{
                 
                 >li{
                     width: 100%;
-                    padding-bottom: 3.6vw;
+                    padding-bottom: 6vw;
                     margin-right: 0px; //모바일: 0px 
                     margin-bottom: 3.5vw;
 
                     >h4.top{
                         height: 22vw; //태블릿: 210px //모바일: 191px
-                        padding: 3.5vw 0px; //태블릿: 40px //모바일: 32px
+                        padding: 5vw 0px 4vw; //태블릿: 40px //모바일: 32px
                         margin-bottom: 3.6vw; //태블릿: 40px //모바일: 32px
 
                         >i{
-                            width: 7vw;
+                            width: 8vw;
                             >img{
                                 width: 100%;
                             }
                         }
 
                         >strong{
-                            font-size: 2.2vw;
+                            font-size: 2.5vw;
                             margin-top: 1.8vw;
                         }
 
                         >span{
-                            font-size: 1.6vw;
-                            margin-top: 0.6vw;
+                            font-size: 1.8vw;
+                            margin-top: 0.7vw;
                         }
                     }//h4.top
 
                     >dl{
                         >dt{ 
-                            font-size: 1.8vw; //태블릿 18px //모바일: 16px
+                            font-size: 2.5vw; //태블릿 18px //모바일: 16px
                         }
 
                         >dd{
-                            margin-top: 1.2vw; //태블릿: 10px //모바일: 8px
+                            margin-top: 1.5vw; //태블릿: 10px //모바일: 8px
                             padding: 0px 2.6vw;
-                            font-size: 1.5vw;
-                            letter-spacing: 120%;
+                            font-size: 2vw;
                             letter-spacing: .001em;
                             
                             >br{
@@ -157,15 +157,17 @@ div.padding{
                     }
 
                     >p{
-                        font-size: 2vw; //태블릿: 18px //모바일: 16px                            
-                        margin: 3.7vw 0px 1.5vw;
+                        font-size: 2.5vw; //태블릿: 18px //모바일: 16px                            
+                        margin: 4vw 0px 1.5vw;
                     }
 
                     >ul:nth-of-type(1){ //체크
-                        height: 12vw;
+                        height: auto;
+                        margin-bottom: 4vw;
+
                         >li{
-                            margin-top: 1.4vw; //모바일: 12px   
-                            font-size: 1.8vw;
+                            margin-top: 2vw; //모바일: 12px   
+                            font-size: 1.9vw;
                             
                             &::before{
                                 margin-right: 0.5vw;
@@ -174,13 +176,13 @@ div.padding{
                     }
                     
                     >ul:nth-of-type(2){//산미 바디
-                        margin-bottom: 3.9vw;
+                        margin-bottom: 5vw;
 
                         >li{
                             margin-top: 1.5vw;
 
                             >span{//산미, 바디 (글자부분)
-                                font-size: 1.8vw;
+                                font-size: 2vw;
                                 margin-right: 1.5vw; 
                             }
 
@@ -246,7 +248,7 @@ div.padding{
                     height: auto; //모바일: height: auto;
                     margin-left: 0px; //모바일: 0px
                     &:not(:first-child){
-                        margin-top: 2.9vw;
+                        margin-top: 5vw;
                     }
 
                     &:nth-of-type(1){
@@ -265,24 +267,25 @@ div.padding{
 
                     dl{
                         margin-top: 2.8vw;
+
                         dt{
-                            font-size: 2.2vw; //태블릿: 20px 모바일: 18px
+                            font-size: 3.5vw; //태블릿: 20px 모바일: 18px
                         }
 
                         dd{
-                            margin-top: 0.8vw;
-                            font-size: 1.8vw;
+                            margin-top: 1.2vw;
+                            font-size: 2.6vw;
                         }
                     }//dl
 
                     p.txt_up{
-                        margin-top: 1.8vw; //모바일: 16px //모바일: 14px
-                        font-size: 1.9vw; //태블릿: 14px //모바일: 16px
+                        margin-top: 2.2vw; //모바일: 16px //모바일: 14px
+                        font-size: 2vw; //태블릿: 14px //모바일: 16px
                     }//p.txt_up
 
                     p.txt_down{
                         margin-top: 0.6vw; //태블릿: 12px //모바일: 8px
-                        font-size: 1.4vw;
+                        font-size: 2vw;
                     }//p.txt_down
                 }//ul.coffeeAndDrink_s>li 4개
             }//ul.coffeeAndDrink_s

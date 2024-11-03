@@ -116,13 +116,13 @@ nav{
     }//div.head_gnb_vertical_top_Wrap //로고와 x버튼
 
     >ul.head_gnb_vertical{
-        font-size: 2.8vw;
-        margin-top: 3.6vw;
+        font-size: 3.5vw;
+        margin-top: 5vw;
 
         //- - - - - - - - - -(gnb1_투썸플레이스 소개)- - - - - - - - - -
         >li{
             &:not(:first-child){
-                margin-top: 3.8vw; //태블릿: 32px //모바일: 24px
+                margin-top: 3.5vw; //태블릿: 32px //모바일: 24px
             }
             &:first-child{
                 margin-top: 0px;
@@ -150,12 +150,12 @@ nav{
                 >li{// 투썸플레이스 ~ 브랜드 브로슈어(총 9개의 li의 lnb [6,2,1 개로 나뉨])
                     &:not(:first-child){margin-top: 1.5vw;} //태블릿: 24px //모바일: 16px
                     >a{
-                        font-size: 1.9vw;
+                        font-size: 2.1vw;
                     }
                     &.mini{
                         //margin-top: 16px; //태블릿: 14px //모바일: 16px
                         >a{
-                            font-size: 1.6vw;
+                            font-size: 2vw;
                         }
                     }//&.mini
 
@@ -245,7 +245,7 @@ div#allFloorWrapper{
 
     >section.main{//1page
         >div.fp-overflow{
-            height: 85lvh;
+            height: 85vh;
             >ul.main_slide{//슬라이드(사진묶음)
                 >li{
                     >picture{ //메인_1 커피배경, 메인_2 여러 케잌배경
@@ -630,13 +630,13 @@ div#allFloorWrapper{
     
     >section.franchise{//5page
         >div.fp-overflow{
-            height: 80lvh;
+            height: 80vh;
     
             >div.background{
                 >ul.dots{
                     >li{
                         // width: 1vw; height: 1vw
-                        width: 1lvh; height: 1lvh;
+                        width: 1vh; height: 1vh;
                     }
                 }//>ul.dots
     
@@ -645,17 +645,19 @@ div#allFloorWrapper{
                         >dl{
                             >dd{
                                 // width: 19vw; height: 19vw;
-                                width: 13lvh; height: 13lvh;
+                                width: 13vh; height: 13vh;
                             }
+                            
                             >dt{
                                 // height: 3.7vw;
                                 // border-radius: 4vw;
                                 // padding: 0 1.9vw;
                                 // font-size: 1.4vw;
-                                height: 2.5lvh;
-                                font-size: 1.2lvh;
-                                padding: 0 1.2lvh;
+                                height: 2.5vh;
+                                font-size: 1.2vh;
+                                padding: 0 1.2vh;
                             }
+                            
                         }//>dl
                     }//>li
                 }//>ul.imgs

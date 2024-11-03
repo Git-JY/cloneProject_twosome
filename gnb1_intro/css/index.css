@@ -417,17 +417,17 @@ div.padding div.wrapper > article.contents3 > ul > li > p {
 }
 @media (max-width: 896px) {
   div.padding {
-    padding: 14vw 3.5vw 0px;
+    padding: 17vw 3.5vw 0px;
   }
   div.padding div.wrapper h2 {
-    font-size: 2.8vw;
-    margin: 2.5vw 0px;
+    font-size: 4vw;
+    margin: 2.5vw 0px 2vw;
   }
   div.padding div.wrapper > nav {
     display: none;
   }
   div.padding div.wrapper > article.contents1 > h1 {
-    font-size: 3.7vw;
+    font-size: 4vw;
     margin-bottom: 2vw;
   }
   div.padding div.wrapper > article.contents1 > div.contents1_1 {
@@ -461,25 +461,25 @@ div.padding div.wrapper > article.contents3 > ul > li > p {
     height: 11vw;
   }
   div.padding div.wrapper > article.contents1 > div.contents1_1 > dl > dt {
-    font-size: 2vw;
+    font-size: 2.8vw;
     margin-bottom: 2.6vw;
   }
   div.padding div.wrapper > article.contents1 > div.contents1_1 > dl > dd {
-    font-size: 2.3vw;
+    font-size: 2.5vw;
   }
   div.padding div.wrapper > article.contents1 > dl.contents1_2 {
     height: 34vw;
     padding: 5vw 0px;
   }
   div.padding div.wrapper > article.contents1 > dl.contents1_2 > dt {
-    margin-bottom: 3vw;
-    font-size: 1.8vw;
+    margin-bottom: 2.6vw;
+    font-size: 2.8vw;
   }
   div.padding div.wrapper > article.contents1 > dl.contents1_2 > dd {
-    font-size: 1.8vw;
+    font-size: 2.3vw;
   }
   div.padding div.wrapper > article.contents1 > dl.contents1_2 > dd > strong {
-    font-size: 3.7vw;
+    font-size: 5.5vw;
   }
   div.padding div.wrapper > article.contents2 {
     margin: 7vw 0px;
@@ -490,8 +490,9 @@ div.padding div.wrapper > article.contents3 > ul > li > p {
     height: auto;
   }
   div.padding div.wrapper > article.contents2 > ul > li {
+    padding: 5.2vw 1vw;
     margin-right: 0px;
-    margin-bottom: 1.8vw;
+    margin-bottom: 2vw;
   }
   div.padding div.wrapper > article.contents2 > ul > li:nth-of-type(3) {
     margin-bottom: 0px;
@@ -501,18 +502,18 @@ div.padding div.wrapper > article.contents3 > ul > li > p {
     height: 13.5vw;
   }
   div.padding div.wrapper > article.contents2 > ul > li > strong {
-    margin: 1.3vw 0px 1vw;
-    font-size: 1.8vw;
+    margin: 0.5vw 0px 2vw;
+    font-size: 2vw;
   }
   div.padding div.wrapper > article.contents2 > ul > li > p {
-    font-size: 2.8vw;
+    font-size: 3.2vw;
   }
   div.padding div.wrapper > article.contents3 {
     margin-bottom: 12vw;
   }
   div.padding div.wrapper > article.contents3 > ul {
-    height: 59vw;
-    padding: 2vw 0px;
+    height: 65vw;
+    padding: 2.5vw 0px;
     flex-wrap: wrap;
   }
   div.padding div.wrapper > article.contents3 > ul > li {
@@ -523,11 +524,11 @@ div.padding div.wrapper > article.contents3 > ul > li > p {
     justify-content: center;
   }
   div.padding div.wrapper > article.contents3 > ul > li > i {
-    width: 6.8vw;
-    height: 6.8vw;
+    width: 7vw;
+    height: 7vw;
     margin-bottom: 3.2vw;
   }
   div.padding div.wrapper > article.contents3 > ul > li > p {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }/*# sourceMappingURL=index.css.map */

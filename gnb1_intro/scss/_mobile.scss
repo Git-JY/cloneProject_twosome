@@ -10,14 +10,14 @@ body{
 
 //- - - - - - - - - - div.wrapper↓ - - - - - - - - - -
 div.padding{
-    padding: 14vw 3.5vw 0px;
+    padding: 17vw 3.5vw 0px;
 
     div.wrapper{
         //outline: 1px solid black;
 
         h2{
-            font-size: 2.8vw;
-            margin: 2.5vw 0px;
+            font-size: 4vw;
+            margin: 2.5vw 0px 2vw;
         }
     
         >nav{ 
@@ -38,7 +38,7 @@ div.padding{
     
         >article.contents1{
             >h1{
-                font-size: 3.7vw;
+                font-size: 4vw;
                 margin-bottom: 2vw;
             }
     
@@ -65,11 +65,11 @@ div.padding{
                     }
     
                     >dt{
-                        font-size: 2vw;
+                        font-size: 2.8vw;
                         margin-bottom: 2.6vw; //태블릿: 36px //모바일: 28px
                     }
                     >dd{
-                        font-size: 2.3vw;
+                        font-size: 2.5vw;
                     }
                 }//dl
             }//div.contents1_1
@@ -81,18 +81,18 @@ div.padding{
                 }
 
                 >dt{
-                    margin-bottom: 3vw;
-                    font-size: 1.8vw;
+                    margin-bottom: 2.6vw;
+                    font-size: 2.8vw;
                 }
 
                 >dd{
-                    font-size: 1.8vw;
+                    font-size: 2.3vw;
 
                     >em{
                     }
 
                     >strong{
-                        font-size: 3.7vw;
+                        font-size: 5.5vw;
                     }
                 }
             }//dl.contents1_2
@@ -111,7 +111,8 @@ div.padding{
                 height: auto; // 태블릿: 276px // 모바일 241px
 
                 >li{
-                    margin-right: 0px; margin-bottom: 1.8vw;// 모바일: 0px // margin-bottom: 16px;
+                    padding: 5.2vw 1vw;
+                    margin-right: 0px; margin-bottom: 2vw;// 모바일: 0px // margin-bottom: 16px;
     
                     &:nth-of-type(3){
                         margin-bottom: 0px
@@ -124,12 +125,12 @@ div.padding{
                     }
     
                     >strong{
-                        margin: 1.3vw 0px 1vw;
-                        font-size: 1.8vw;
+                        margin: 0.5vw 0px 2vw;
+                        font-size: 2vw;
                     }
 
                     >p{
-                        font-size: 2.8vw;
+                        font-size: 3.2vw;
                     }
                 }//li
             }//ul
@@ -144,8 +145,8 @@ div.padding{
             }
 
             >ul{
-                height: 59vw; //태블릿: 208px //모바일: 519px
-                padding: 2vw 0px;
+                height: 65vw; //태블릿: 208px //모바일: 519px
+                padding: 2.5vw 0px;
                 flex-wrap: wrap;
 
                 >li{
@@ -156,14 +157,14 @@ div.padding{
                     justify-content: center;
 
                     >i{
-                        width: 6.8vw; height: 6.8vw;
+                        width: 7vw; height: 7vw;
                         margin-bottom: 3.2vw;
 
                         >img{
                         }
                     }
                     >p{
-                        font-size: 2vw;
+                        font-size: 2.5vw;
                     }
                         
                 }//li

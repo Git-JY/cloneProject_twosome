@@ -234,7 +234,7 @@ div.padding div.wrapper > section.contents3 > p {
 }
 @media (max-width: 896px) {
   div.padding {
-    padding: 14vw 3.5vw 12vw;
+    padding: 17vw 3.5vw 12vw;
   }
   div.padding div.wrapper h1 {
     font-size: 4vw;
@@ -263,9 +263,9 @@ div.padding div.wrapper > section.contents3 > p {
     margin-top: 1.5vw;
   }
   div.padding div.wrapper > section.contents2 > p {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   div.padding div.wrapper > section.contents3 > p {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
 }/*# sourceMappingURL=index.css.map */

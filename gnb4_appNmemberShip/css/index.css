@@ -565,7 +565,7 @@ div.wrapper > article.Download > div.apps > div.qrCode {
 }
 @media (max-width: 896px) {
   div.wrapper {
-    padding: 14vw 0px 12vw;
+    padding: 17vw 0px 12vw;
   }
   div.wrapper h2 {
     margin: 3vw 0px;
@@ -602,12 +602,12 @@ div.wrapper > article.Download > div.apps > div.qrCode {
     font-size: 5.4vw;
   }
   div.wrapper > article.contents1 > ul > li.left > dl > dd {
-    font-size: 2.3vw;
-    margin-top: 2vw;
+    font-size: 2.5vw;
+    margin-top: 2.8vw;
   }
   div.wrapper > article.contents1 > ul > li.left > p {
     margin-top: 5.3vw;
-    font-size: 1.8vw;
+    font-size: 2.4vw;
     word-break: keep-all;
     word-wrap: break-word;
   }
@@ -629,7 +629,7 @@ div.wrapper > article.Download > div.apps > div.qrCode {
   }
   div.wrapper > article.contents2 > ul.twosome_box_list > li {
     width: 100%;
-    height: 54vw;
+    height: 50vw;
     padding: 0px;
   }
   div.wrapper > article.contents2 > ul.twosome_box_list > li > i {
@@ -647,6 +647,9 @@ div.wrapper > article.Download > div.apps > div.qrCode {
   div.wrapper > article.contents2 > ul.twosome_box_list > li > dl > dd {
     margin-top: 1.5vw;
     font-size: 2.6vw;
+  }
+  div.wrapper > article.contents3 {
+    overflow: hidden;
   }
   div.wrapper > article.contents3 > div.MobileBtns_wrapper {
     top: 28%;
@@ -713,7 +716,7 @@ div.wrapper > article.Download > div.apps > div.qrCode {
     align-items: center;
   }
   div.wrapper > article.contents3 > div.slide_frame > ul.slide > li div.slideLiWrapper > div.right > i {
-    width: 70%;
+    width: 40%;
     height: auto;
     margin: auto;
   }
@@ -748,11 +751,11 @@ div.wrapper > article.Download > div.apps > div.qrCode {
   div.wrapper > article.Download > div.apps {
     flex-direction: column;
     width: 100%;
-    height: 17.9vw;
+    height: 20vw;
   }
   div.wrapper > article.Download > div.apps > div.app, div.wrapper > article.Download > div.apps a.app {
     width: 100%;
-    height: 7.5vw;
+    height: 9vw;
   }
   div.wrapper > article.Download > div.apps > div.app > i, div.wrapper > article.Download > div.apps a.app > i {
     width: 3.5vw;

@@ -10,7 +10,7 @@ body{
 //- - - - - - - - - - div.wrapper↓ - - - - - - - - - -
 
 div.wrapper{
-    padding: 14vw 0px 12vw;
+    padding: 17vw 0px 12vw;
 
     //outline: 1px solid black;
 
@@ -72,15 +72,15 @@ div.wrapper{
                     }
 
                     >dd{
-                        font-size: 2.3vw;
+                        font-size: 2.5vw;
                          //태블릿: 24px //모바일: 20px
-                        margin-top: 2vw; //태블릿: 24px //모바일: 16px
+                        margin-top: 2.8vw; //태블릿: 24px //모바일: 16px
                     }
                 }//>dl
 
                 >p{
                     margin-top: 5.3vw;
-                    font-size: 1.8vw;
+                    font-size: 2.4vw;
                     @include text();
                     
                     >em{    
@@ -110,7 +110,7 @@ div.wrapper{
             margin-left: 3.5vw; margin-right: 3.5vw;
             
             >li{
-                width: 100%; height: 54vw;
+                width: 100%; height: 50vw;
                 padding: 0px;
 
                 >i{
@@ -140,6 +140,7 @@ div.wrapper{
     }//article.contents2  
     
     >article.contents3{
+        overflow: hidden;
 
         >div.MobileBtns_wrapper{ 
             top: 28%;
@@ -232,7 +233,7 @@ div.wrapper{
                             @include flex();
 
                             >i{
-                                width: 70%;  height: auto; //모바일: width: 100%; height: auto;
+                                width: 40%;  height: auto; //모바일: width: 100%; height: auto;
                                 margin: auto;
                                 
                                 >img{ 
@@ -298,11 +299,11 @@ div.wrapper{
         >div.apps{
             flex-direction: column; //모바일 flex-direction: column
             width: 100%; //태블릿: 438px //모바일: 100%
-            height: 17.9vw; //모바일
+            height: 20vw; //모바일
 
             >div.app, a.app{
                 width: 100%; //태블릿: 179px //모바일: 100%
-                height: 7.5vw; //모바일: 48px
+                height: 9vw; //모바일: 48px
             
                 >i{
                     width: 3.5vw; height: 3.5vw;

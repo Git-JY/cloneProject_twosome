@@ -541,10 +541,10 @@ div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li p.txt_down {
 }
 @media (max-width: 896px) {
   div.padding {
-    padding: 14vw 0px 0px;
+    padding: 17vw 0px 0px;
   }
   div.padding div.wrapper h2 {
-    font-size: 2.8vw;
+    font-size: 3.5vw;
     margin: 2.5vw 0px;
   }
   div.padding div.wrapper > nav {
@@ -558,7 +558,7 @@ div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li p.txt_down {
     margin-right: 0px;
   }
   div.padding div.wrapper > article.contents1 > h1 {
-    font-size: 3.7vw;
+    font-size: 4vw;
     margin-left: 3.5vw;
     margin-right: 3.5vw;
     margin-bottom: 2vw;
@@ -568,27 +568,28 @@ div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li p.txt_down {
     flex-direction: column-reverse;
   }
   div.padding div.wrapper > article.contents1 > ul > li.left {
-    transform: translateY(-4.7vw);
+    transform: translateY(-5vw);
     padding-right: 0px;
     margin-left: 3.5vw;
     margin-right: 3.5vw;
+    margin-bottom: 4vw;
   }
   div.padding div.wrapper > article.contents1 > ul > li.left > dl {
-    margin-bottom: 3.6vw;
+    margin-bottom: 3.5vw;
   }
   div.padding div.wrapper > article.contents1 > ul > li.left > dl > dt {
-    font-size: 3.7vw;
-    margin-bottom: 2.5vw;
+    font-size: 4vw;
+    margin-bottom: 3vw;
   }
   div.padding div.wrapper > article.contents1 > ul > li.left > dl > dd {
-    font-size: 2.4vw;
+    font-size: 2.6vw;
     line-height: 140%;
   }
   div.padding div.wrapper > article.contents1 > ul > li.left > dl > dd br.onMb {
     display: inline-block;
   }
   div.padding div.wrapper > article.contents1 > ul > li.left > p {
-    font-size: 1.9vw;
+    font-size: 2.4vw;
   }
   div.padding div.wrapper > article.contents2 {
     margin-top: 3vw;
@@ -601,64 +602,64 @@ div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li p.txt_down {
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li {
     width: 100%;
-    padding-bottom: 3.6vw;
+    padding-bottom: 6vw;
     margin-right: 0px;
     margin-bottom: 3.5vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > h4.top {
     height: 22vw;
-    padding: 3.5vw 0px;
+    padding: 5vw 0px 4vw;
     margin-bottom: 3.6vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > h4.top > i {
-    width: 7vw;
+    width: 8vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > h4.top > i > img {
     width: 100%;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > h4.top > strong {
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     margin-top: 1.8vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > h4.top > span {
-    font-size: 1.6vw;
-    margin-top: 0.6vw;
+    font-size: 1.8vw;
+    margin-top: 0.7vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > dl > dt {
-    font-size: 1.8vw;
+    font-size: 2.5vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > dl > dd {
-    margin-top: 1.2vw;
+    margin-top: 1.5vw;
     padding: 0px 2.6vw;
-    font-size: 1.5vw;
-    letter-spacing: 120%;
+    font-size: 2vw;
     letter-spacing: 0.001em;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > dl > dd > br {
     display: inline-block;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > p {
-    font-size: 2vw;
-    margin: 3.7vw 0px 1.5vw;
+    font-size: 2.5vw;
+    margin: 4vw 0px 1.5vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > ul:nth-of-type(1) {
-    height: 12vw;
+    height: auto;
+    margin-bottom: 4vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > ul:nth-of-type(1) > li {
-    margin-top: 1.4vw;
-    font-size: 1.8vw;
+    margin-top: 2vw;
+    font-size: 1.9vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > ul:nth-of-type(1) > li::before {
     margin-right: 0.5vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > ul:nth-of-type(2) {
-    margin-bottom: 3.9vw;
+    margin-bottom: 5vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > ul:nth-of-type(2) > li {
     margin-top: 1.5vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > ul:nth-of-type(2) > li > span {
-    font-size: 1.8vw;
+    font-size: 2vw;
     margin-right: 1.5vw;
   }
   div.padding div.wrapper > article.contents2 > ul.special_coffee_list > li > ul:nth-of-type(2) > li > ul {
@@ -683,7 +684,7 @@ div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li p.txt_down {
     margin-left: 0px;
   }
   div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li:not(:first-child) {
-    margin-top: 2.9vw;
+    margin-top: 5vw;
   }
   div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li span {
     top: 1vw;
@@ -694,18 +695,18 @@ div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li p.txt_down {
     margin-top: 2.8vw;
   }
   div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li dl dt {
-    font-size: 2.2vw;
+    font-size: 3.5vw;
   }
   div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li dl dd {
-    margin-top: 0.8vw;
-    font-size: 1.8vw;
+    margin-top: 1.2vw;
+    font-size: 2.6vw;
   }
   div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li p.txt_up {
-    margin-top: 1.8vw;
-    font-size: 1.9vw;
+    margin-top: 2.2vw;
+    font-size: 2vw;
   }
   div.padding div.wrapper > article.contents3 ul.coffeeAndDrink_s li p.txt_down {
     margin-top: 0.6vw;
-    font-size: 1.4vw;
+    font-size: 2vw;
   }
 }/*# sourceMappingURL=index.css.map */

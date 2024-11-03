@@ -421,12 +421,15 @@ nav.navigate{
             }//&.gray
 
             &:nth-child(-n+4){
-                text-decoration: rgba(213, 64, 0, 0.5)  underline;
-                text-underline-offset: 0.2em;
+                >a{
+                    text-decoration: rgba(213, 64, 0, 0.5) underline;
+                    text-underline-offset: 0.2em;
+                }
 
                 >ul.head_lnb{
                     >li:first-child{
                         text-decoration: rgba(213, 64, 0, 0.5) underline;
+                        text-underline-offset: 0.2em;
                     }
                 }//>ul.head_lnb
             }//&:nth-child(-n+4)
