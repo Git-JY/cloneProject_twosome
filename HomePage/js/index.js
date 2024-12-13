@@ -378,7 +378,7 @@ let setViewportHeight = () => {
 setViewportHeight();
 
 // 창 크기가 바뀔 때마다 업데이트
-window.addEventListener('resize', setViewportHeight);
+// window.addEventListener('resize', setViewportHeight);
 
 
 
