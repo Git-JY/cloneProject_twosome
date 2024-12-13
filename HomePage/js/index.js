@@ -370,6 +370,15 @@ md[0].addEventListener('change', () => {
 //history.scrollRestoration = "manual"; // 새로고침 시 항상 top: 0 위치로 이동된다. // 새로고침시 transform: translateY();는 리셋되었는데, 스크롤이 그 위치로 가는 문제점을 막기 위함
 
 
+let setViewportHeight = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}//setViewportHeight() 함수정의
+
+setViewportHeight();
+
+// 창 크기가 바뀔 때마다 업데이트
+window.addEventListener('resize', setViewportHeight);
 
 
 
