@@ -245,7 +245,8 @@ div#allFloorWrapper{
 
     >section.main{//1page
         >div.fp-overflow{
-            height: calc(var(--vh, 1vh) * 85);
+            // height: calc(var(--vh, 1vh) * 85);
+            height: -webkit-fill-available;
             >ul.main_slide{//슬라이드(사진묶음)
                 >li{
                     >picture{ //메인_1 커피배경, 메인_2 여러 케잌배경
